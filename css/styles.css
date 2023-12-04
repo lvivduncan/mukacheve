@@ -8,7 +8,10 @@
 
 @import url('./home.css');
 
+@import url('./news-posts.css');
 
+@import url('./hot-single-post.css');
 
+@import url('./hot-posts.css');
 
-
+@import url('./four-posts.css');

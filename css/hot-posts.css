@@ -1,0 +1,69 @@
+/*
+hot post right in home page
+*/
+
+#hot-posts
+{
+
+}
+
+#hot-posts article
+{
+    display: grid;
+    grid-template-areas: 
+        'hot-posts-picture hot-posts-h1'
+        'hot-posts-picture hot-posts-time';
+    grid-template-columns: 120px 160px;
+    gap: var(--gap10) var(--gap20);
+    align-items: start;
+    border-top: 1px solid var(--border-post);
+    padding-top: var(--gap15);
+    padding-bottom: var(--gap10);
+}
+
+#hot-posts article:first-child
+{
+    border: none;
+    padding-top: 0;
+}
+
+#hot-posts article .picture
+{
+    grid-area: hot-posts-picture;
+}
+
+#hot-posts article time 
+{
+    grid-area: hot-posts-time;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: var(--border);
+}
+
+#hot-posts h1
+{
+    grid-area: hot-posts-h1;
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    letter-spacing: 0;
+}
+
+#hot-posts h1 a 
+{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--strong-link);
+    transition: color .5s;
+}
+
+#hot-posts h1 a:hover 
+{
+    color: var(--media);
+}
