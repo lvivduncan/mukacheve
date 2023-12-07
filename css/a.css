@@ -2,9 +2,15 @@
 #a1
 {
     text-align: center;
+    margin: 2px 0;
 }
 
 #a2
 {
     margin: var(--gap20) 0;
+}
+
+#a5
+{
+    margin: var(--gap20) 0
 }

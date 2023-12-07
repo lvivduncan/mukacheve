@@ -1,0 +1,9 @@
+/*
+media tabs
+*/
+
+#media
+{
+    background: var(--media);
+    padding: var(--gap40) 0;
+}

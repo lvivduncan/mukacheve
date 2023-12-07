@@ -31,19 +31,6 @@ hot post right in home page
 {
     grid-area: hot-posts-picture;
 }
-
-#hot-posts article time 
-{
-    grid-area: hot-posts-time;
-
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 400;
-    line-height: 20px;
-    letter-spacing: 0;
-    color: var(--border);
-}
-
 #hot-posts h1
 {
     grid-area: hot-posts-h1;
@@ -52,7 +39,9 @@ hot post right in home page
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    letter-spacing: 0;
+    /* letter-spacing: 0; */
+    position: relative;
+    top: -3px;
 }
 
 #hot-posts h1 a 
@@ -66,4 +55,18 @@ hot post right in home page
 #hot-posts h1 a:hover 
 {
     color: var(--media);
+}
+
+#hot-posts article time 
+{
+    grid-area: hot-posts-time;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: var(--border);
+    position: relative;
+    top: -3px;
 }

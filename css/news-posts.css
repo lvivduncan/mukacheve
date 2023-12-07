@@ -4,7 +4,7 @@ long aside posts
 
 .news-posts 
 {
-
+    margin: 0 0 var(--gap20)
 }
 
 .news-posts article
@@ -22,6 +22,7 @@ long aside posts
     letter-spacing: 0;
     color: var(--border);
     display: block;
+    margin: 0 0 var(--gap10);
 }
 
 .news-posts article h1
@@ -52,7 +53,7 @@ long aside posts
 {
     color: var(--media);
 }
-
+/* 
 .news-posts article .view
 {
     font-family: Roboto;
@@ -94,4 +95,4 @@ long aside posts
     position: relative;
     top: 2px;
     left: -3px;
-}
+} */

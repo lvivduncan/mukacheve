@@ -30,7 +30,7 @@ title + 4 posts
     gap: 0 var(--gap20);
     grid-template-rows: 25px 1fr;
     border-top: 1px solid var(--border-post);
-    padding-top: var(--gap10);
+    padding-top: var(--gap15);
 }
 
 .four-posts .picture
