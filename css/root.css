@@ -6,6 +6,7 @@
     --gap20: 20px;
     --gap30: 30px;
     --gap40: 40px;
+    --gap60: 60px;
     --border: #999;
     --border-post: #ccc;
     --border-button: #e5e7eb;
@@ -149,6 +150,7 @@ picture source
     display: inline-block;
     width: 16px;
     height: 10px;
+    margin-right: 5px;
 }
 
 .comment
@@ -159,7 +161,8 @@ picture source
     line-height: 20px;
     letter-spacing: 0;
     color: var(--border); 
-    margin-left: var(--gap10);   
+    margin-left: var(--gap10);
+    white-space: nowrap; 
 }
 
 .comment::before

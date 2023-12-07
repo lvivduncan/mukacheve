@@ -1,15 +1,147 @@
 
 /* 300 1fr 300 */
-#home
+#home-main-column
 {
     padding: var(--gap20) 0;
-}
 
-#home .wrapper
-{
     display: grid;
     grid-template-columns: 300px 1fr 300px;
     gap: var(--gap40);
 }
 
+/* 25% 25% 25% 25% */
+#four-column
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: var(--gap40);
+    margin: var(--gap40) 0;
+}
 
+
+#four-column article
+{
+    border-top: 1px solid var(--border-post);
+    padding: var(--gap15) 0;
+}
+
+#four-column .picture 
+{
+    margin-bottom: var(--gap10);
+}
+
+#four-column article time 
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: var(--border);
+    display: block;
+    margin: 0 0 var(--gap10);
+}
+
+#four-column article h1
+{
+    display: inline;
+}
+
+#four-column article h1 a
+{
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: var(--black);
+    text-decoration: none;
+    transition: color .5s;
+}
+
+#four-column article:first-of-type
+{
+    border: none;
+    padding: 0 0 var(--gap15);
+}
+
+#four-column article:first-of-type h1 a
+{
+    font-weight: 700;
+    color: var(--strong-link);
+    transition: color .5s;
+}
+
+#four-column article h1 a:hover,
+#four-column article:first-of-type h1 a:hover
+{
+    color: var(--media);
+}
+
+#two-column
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--gap40);
+    margin: var(--gap40) 0;
+}
+
+#two-column div
+{
+    counter-reset: section;
+}
+
+#two-column article
+{
+    padding: var(--gap20) 0 var(--gap20) var(--gap60);
+    border-top: 1px solid var(--border-post);
+
+    position: relative;
+}
+
+
+#two-column article::before
+{
+    counter-increment: section;
+    content: counter(section);
+
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--border);
+    margin: 0 var(--gap30) 0 var(--gap20);
+
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+}
+
+#two-column h1 
+{
+    display: inline;
+}
+
+#two-column h1 a 
+{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+
+#two-column article:first-of-type h1 a
+{
+    /* font-family: Roboto; */
+    font-size: 18px;
+    font-weight: 700;
+    /* line-height: 20px; */
+    color: var(--footer);
+}
+
+#two-column h1 a:hover
+{
+    text-decoration: underline;
+}
