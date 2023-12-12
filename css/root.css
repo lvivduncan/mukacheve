@@ -414,6 +414,17 @@ main p
     margin: 0 0 var(--gap20);
 }
 
+main a
+{
+    color: var(--media);
+    text-decoration: underline;
+}
+
+main a:hover
+{
+    text-decoration: none;
+}
+
 
 /**/
 .share 
