@@ -14,9 +14,15 @@
 
 @import url('./hot-posts.css');
 
-@import url('./four-posts.css');
+@import url('./two-posts.css');
 
 @import url('./full-posts.css');
+
+@import url('./four-column.css');
+
+@import url('./three-column.css');
+
+@import url('./two-column.css');
 
 /*
 todo: blogs 2 and blogs 3
@@ -27,6 +33,8 @@ todo: blogs 2 and blogs 3
 @import url('./media.css');
 
 @import url('./main-sidebar.css');
+
+@import url('./one-posts.css');
 
 /*
 todo: a a:hover

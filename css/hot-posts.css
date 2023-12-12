@@ -4,7 +4,7 @@ hot post right in home page
 
 #hot-posts
 {
-
+    margin: 0 0 var(--gap20);
 }
 
 #hot-posts article

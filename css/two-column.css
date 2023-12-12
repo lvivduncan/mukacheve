@@ -1,0 +1,67 @@
+
+.two-column
+{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--gap40);
+    margin: var(--gap40) 0;
+}
+
+.two-column div
+{
+    counter-reset: section;
+}
+
+.two-column article
+{
+    padding: var(--gap20) 0 var(--gap20) var(--gap60);
+    border-top: 1px solid var(--border-post);
+
+    position: relative;
+}
+
+
+.two-column article::before
+{
+    counter-increment: section;
+    content: counter(section);
+
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--border);
+    margin: 0 var(--gap30) 0 var(--gap20);
+
+    position: absolute;
+    top: calc(50% - 10px);
+    left: 0;
+}
+
+.two-column h1 
+{
+    display: inline;
+}
+
+.two-column h1 a 
+{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    color: var(--black);
+    text-decoration: none;
+}
+
+
+.two-column article:first-of-type h1 a
+{
+    font-size: 18px;
+    font-weight: 700;
+    color: var(--footer);
+}
+
+.two-column h1 a:hover
+{
+    text-decoration: underline;
+}

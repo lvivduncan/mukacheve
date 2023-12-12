@@ -10,6 +10,11 @@
     margin: var(--gap20) 0;
 }
 
+#a3
+{
+    margin: 0 0 var(--gap20)
+}
+
 #a5
 {
     margin: var(--gap20) 0
@@ -19,4 +24,14 @@
 {
     margin: var(--gap20) 0;
     text-align: center;
+}
+
+#a7
+{
+    margin: var(--gap20) 0;
+}
+
+#a9
+{
+    margin: var(--gap20) 0;    
 }

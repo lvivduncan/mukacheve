@@ -1,26 +1,18 @@
 /*
-title + 4 posts
+title + single posts
 */
 
-.four-posts
+.one-posts
 {
-    display: grid;
-    grid-template-areas: 
-    'four-posts-title four-posts-title'
-    'four-posts-1 four-posts-3'
-    'four-posts-2 four-posts-4';
-    grid-template-columns: repeat(2,1fr);
-    gap: var(--gap10) var(--gap40);
     margin: var(--gap30) 0;
 }
 
-.four-posts .title
+.one-posts .title
 {
-    grid-area: four-posts-title;
-    margin: 0;
+    margin-bottom: var(--gap15);
 }
 
-.four-posts article
+.one-posts article
 {
     display: grid;
     grid-template-columns: 120px 160px;
@@ -31,33 +23,33 @@ title + 4 posts
     grid-template-rows: 25px 1fr;
     border-top: 1px solid var(--border-post);
     padding-top: var(--gap15);
+    margin-bottom: var(--gap15);
 }
 
-.four-posts .picture
+.one-posts .picture
 {
     grid-area: four-post-picture;
 
 }
 
-.four-posts time 
+.one-posts time 
 {
     grid-area: four-post-time;
 
     font-family: Roboto;
     font-size: 14px;
     font-weight: 400;
-    /* line-height: 20px; */
     letter-spacing: 0;
     color: var(--border);
 }
 
-.four-posts h1 
+.one-posts h1 
 {
     grid-area: four-post-h1;
     display: flex;
 }
 
-.four-posts h1 a 
+.one-posts h1 a 
 {
     font-family: Roboto;
     font-size: 16px;
@@ -69,27 +61,7 @@ title + 4 posts
     transition: color .5s;
 }
 
-.four-posts h1 a:hover
+.one-posts h1 a:hover
 {
     color: var(--media)
-}
-
-.four-posts article:nth-of-type(1)
-{
-    grid-area: four-posts-1;
-}
-
-.four-posts article:nth-of-type(2)
-{
-    grid-area: four-posts-2;
-}
-
-.four-posts article:nth-of-type(3)
-{
-    grid-area: four-posts-3;
-}
-
-.four-posts article:nth-of-type(4)
-{
-    grid-area: four-posts-4;
 }

@@ -1,0 +1,71 @@
+
+/* 25% 25% 25% 25% */
+.four-column
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: var(--gap40);
+    margin: var(--gap40) 0;
+}
+
+
+.four-column article
+{
+    border-top: 1px solid var(--border-post);
+    padding: var(--gap15) 0;
+}
+
+.four-column .picture 
+{
+    margin-bottom: var(--gap10);
+}
+
+.four-column article time 
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: var(--border);
+    display: block;
+    margin: 0 0 var(--gap10);
+}
+
+.four-column article h1
+{
+    display: inline;
+    line-height: 20px;
+}
+
+.four-column article h1 a
+{
+    color: var(--black);
+    text-decoration: none;
+    transition: color .5s;
+
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.four-column article:first-of-type
+{
+    border: none;
+    padding: 0 0 var(--gap15);
+}
+
+.four-column article:first-of-type h1 a
+{
+    font-weight: 700;
+    font-size: 18px;
+    color: var(--strong-link);
+    transition: color .5s;
+}
+
+.four-column article h1 a:hover,
+.four-column article:first-of-type h1 a:hover
+{
+    color: var(--media);
+}
