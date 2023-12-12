@@ -54,6 +54,7 @@ title + 4 posts
 .four-posts h1 
 {
     grid-area: four-post-h1;
+    display: flex;
 }
 
 .four-posts h1 a 

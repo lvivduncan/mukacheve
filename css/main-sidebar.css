@@ -1,0 +1,10 @@
+/*
+wide main and narrow sidebar
+*/
+
+.main-sidebar 
+{
+    display: grid;
+    grid-template-columns: 980px 300px;
+    gap: var(--gap40)
+}

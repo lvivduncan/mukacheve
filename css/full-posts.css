@@ -24,11 +24,18 @@ full width post (width image)
     font-weight: 400;
     line-height: 20px;
     color: var(--border);
+    margin: 2px 0 0;
 }
+
+/* .full-posts article div 
+{
+    line-height: 14px;
+} */
 
 .full-posts h1 
 {
     display: inline;
+    line-height: 20px;
 }
 
 .full-posts h1 a
@@ -46,6 +53,7 @@ full width post (width image)
 {
     color: var(--strong-link);
     font-weight: 700;
+    font-size: 18px;
     transition: color .5s;
 }
 

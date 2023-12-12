@@ -45,17 +45,23 @@
 #four-column article h1
 {
     display: inline;
+    line-height: 20px;
 }
 
 #four-column article h1 a
 {
-    font-family: Roboto;
-    font-size: 18px;
-    line-height: 20px;
-    letter-spacing: 0;
+    /* font-family: Roboto; */
+    /* font-size: 18px; */
+    /* line-height: 20px; */
+    /* letter-spacing: 0; */
     color: var(--black);
     text-decoration: none;
     transition: color .5s;
+
+
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
 }
 
 #four-column article:first-of-type
@@ -67,6 +73,7 @@
 #four-column article:first-of-type h1 a
 {
     font-weight: 700;
+    font-size: 18px;
     color: var(--strong-link);
     transition: color .5s;
 }

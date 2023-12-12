@@ -51,6 +51,8 @@
 .blog-2-posts article > h1 
 {
     grid-area: blog-h1;
+
+    line-height: 20px;
 }
 
 .blog-2-posts article > h1 a 
@@ -58,7 +60,7 @@
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
-    line-height: 20px;
+    /* line-height: 20px; */
     color: var(--black);
     text-decoration: none;
 }
