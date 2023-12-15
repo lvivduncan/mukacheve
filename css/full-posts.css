@@ -9,12 +9,15 @@ full width post (width image)
 
 .full-posts article
 {
-    display: grid;
-    grid-template-columns: 40px 1fr;
-    gap: var(--gap20);
+    /* display: grid; */
+    /* grid-template-columns: 40px 1fr; */
+    gap: var(--gap25);
     border-top: 1px solid var(--border-post);
     padding-top: var(--gap15);
-    margin-bottom: var(--gap15)
+    margin-bottom: var(--gap15);
+
+    display: flex;
+
 }
 
 .full-posts time 
@@ -25,7 +28,36 @@ full width post (width image)
     line-height: 20px;
     color: var(--border);
     margin: 2px 0 0;
+
+    width: 40px;
 }
+
+/*
+if post contains an image
+*/
+.full-posts .picture
+{
+    width: 120px;
+    height: 77px;
+    padding: 0;
+    position: static;
+    overflow: visible;
+}
+
+.full-posts .picture picture 
+{
+    position: static;
+}
+
+.full-posts .picture picture img
+{
+    width: 120px;
+    height: 77px;
+    max-width: none;
+}
+/*
+if post contains an image
+*/
 
 .full-posts h1 
 {
