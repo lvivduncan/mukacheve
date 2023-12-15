@@ -1,0 +1,33 @@
+/*
+image post aside 
+*/
+
+.image-posts article
+{
+    margin: 0 0 var(--gap20);
+}
+
+.image-posts article .picture
+{
+    margin: 0 0 var(--gap10)
+}
+
+.image-posts article h1
+{
+    display: inline;
+}
+
+.image-posts article h1 a
+{
+    color: var(--strong-link);
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 20px;
+    text-decoration: none;
+}
+
+.image-posts article h1 a:hover 
+{
+    text-decoration: underline;
+}
