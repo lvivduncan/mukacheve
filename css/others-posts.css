@@ -1,0 +1,56 @@
+/*
+1 title
+2,3,4,5   6,7,8,9   10,11,12,13 ... articles
+*/
+
+.others-posts 
+{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 0 var(--gap20);
+    margin: var(--gap20) 0
+}
+
+.others-posts :first-child
+{
+    grid-column: 1 / -1;
+    width: 100%;
+}
+
+.others-posts article
+{
+    margin: 0 0 var(--gap20)
+}
+
+.others-posts .picture 
+{
+    margin-bottom: var(--gap10);
+}
+
+.others-posts article time 
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: var(--border);
+    display: block;
+    margin: 0 0 var(--gap10);
+}
+
+.others-posts article h1
+{
+    display: inline;
+    line-height: 20px;
+}
+
+.others-posts article h1 a
+{
+    color: var(--footer);
+    text-decoration: none;
+    transition: color .5s;
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+}

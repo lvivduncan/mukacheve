@@ -30,24 +30,33 @@
 
 ::placeholder
 {
-    color: var(--black)
+    color: var(--form)
 }
 
 #comments form 
 {
     display: block;
-    margin: 0 0 var(--gap20);
+    margin: var(--gap20) 0;
 }
 
-#form-top
+/*
+вкладена 
+*/
+#comments li form 
+{
+    margin: var(--gap20) 0 var(--gap20) var(--gap60);
+}
+
+.form-top
 {
     display: flex;
     margin: 0 0 var(--gap20);
     align-items: center;
     gap: var(--gap20);
+    min-height: 50px;
 }
 
-#enter
+.form-enter
 {
     padding: 12px var(--gap20);
     color: var(--body);
@@ -63,7 +72,7 @@
     cursor: pointer;
 }
 
-#characters
+.form-characters
 {
     margin-left: auto;
 }
@@ -116,7 +125,7 @@
     border-color: var(--media);
 }
 
-#form-bottom
+.form-bottom
 {
     display: flex;
     margin: var(--gap20) 0 0;
@@ -125,7 +134,7 @@
     align-items: center;
 }
 
-#form-bottom input[type="submit"]
+.form-bottom input[type="submit"]
 {
     font-family: Roboto;
     font-size: 14px;
@@ -206,6 +215,11 @@
     text-decoration: none;
 }
 
+.comment-head-user a:hover
+{
+    text-decoration: underline;
+}
+
 .comment-head-user span
 {
     display: block;
@@ -234,12 +248,13 @@
     display: flex;
     justify-content: space-between;
     margin: var(--gap10) 0 0 var(--gap60);
-    /* display: block; */
-    color: var(--media);
-    text-decoration: underline;    
 }
 
 .comment-footer p
 {
     cursor: pointer;
+    color: var(--media);
+    text-decoration: underline;   
+
+    text-decoration-skip-ink: none;
 }
