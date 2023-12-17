@@ -149,62 +149,105 @@
 						<p>Заповніть наступні поля щоб зареєструватися:</p>
 
 						<form>
-							<input
-								type="text"
-								name=""
-								id=""
-								placeholder="Користувач"
-							/>
-							<input
-								type="text"
-								name=""
-								id=""
-								placeholder="Пароль"
-							/>
-							<input
-								type="text"
-								name=""
-								id=""
-								placeholder="Повторіть пароль"
-							/>
-							<input
-								type="text"
-								name=""
-								id=""
-								placeholder="E-mail"
-							/>
-							<input type="checkbox" name="" id="" /> Показувати
-							електронну пошту
-							<input
-								type="text"
-								name=""
-								id=""
-								placeholder="Ім'я"
-							/>
-							<input
-								type="text"
-								name=""
-								id=""
-								placeholder="Прізвище"
-							/>
-							<input
-								type="text"
-								name=""
-								id=""
-								placeholder="По балькови"
-							/>
-							Код перевірки
-							<img src="temp/captcha.jpg" alt="" />
-							<input type="submit" value="Відправити" />
+							<div id="registration-user">
+								<input
+									type="text"
+									name=""
+									id=""
+									placeholder="Користувач"
+								/>
+							</div>
+
+							<div id="registration-password">
+								<input
+									type="password"
+									name=""
+									placeholder="Пароль"
+								/>
+							</div>
+							<div id="registration-re-password">
+								<input
+									type="password"
+									name=""
+									placeholder="Повторіть пароль"
+								/>
+							</div>
+							<div id="registration-mail">
+								<input
+									type="email"
+									name=""
+									placeholder="E-mail"
+								/>
+							</div>
+							<div id="registration-checkbox">
+								<label>
+									Показувати електронну пошту
+									<input type="checkbox" />
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div id="registration-name">
+								<input type="text" name="" placeholder="Ім'я" />
+							</div>
+							<div id="registration-surname">
+								<input
+									type="text"
+									name=""
+									placeholder="Прізвище"
+								/>
+							</div>
+							<div id="registration-dad">
+								<input
+									type="text"
+									name=""
+									placeholder="По батькові"
+								/>
+							</div>
+							<div id="registration-code">Код перевірки</div>
+							<div id="registration-captcha">
+								<img src="temp/captcha.jpg" alt="" />
+							</div>
+							<div id="registration-submit">
+								<input type="submit" value="Відправити" />
+							</div>
 						</form>
 					</div>
 					<hr />
-					<div id="login">2</div>
+					<div id="login">
+						<div class="title">Увійти</div>
+						<p>Заповніть наступні поля щоб увійти:</p>
+						<form>
+							<div id="login-user">
+								<input
+									type="text"
+									placeholder="Ім'я користувача"
+								/>
+							</div>
+							<div id="login-password">
+								<input type="text" placeholder="Пароль" />
+							</div>
+							<div id="login-checkbox">
+								<label>
+									Запам'ятати мене
+									<input type="checkbox" />
+									<span class="checkmark"></span>
+								</label>
+							</div>
+							<div id="login-recovery">
+								Якщо ви забули пароль ви можете
+								<a href="#">скинути його</a>.
+							</div>
+							<div id="login-submit">
+								<input type="submit" value="Увійти" />
+							</div>
+						</form>
+					</div>
 
 					<div id="a6">
 						<a href="#"><img src="temp/a1.jpg" alt="" /></a>
 					</div>
 				</div>
+
 				<aside>
 					<div id="a3">
 						<a href="#">

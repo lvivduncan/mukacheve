@@ -1,6 +1,6 @@
 #registration
 {
-
+    margin: 0 0 var(--gap60)
 }
 
 #registration p
@@ -10,17 +10,318 @@
     font-weight: 300;
     line-height: 24px;
     letter-spacing: -0.015em;
-    /* text-align: left; */
-    color: var(--black)
+    color: var(--black);
+    margin: 0 0 var(--gap20);
 }
 
 #registration form 
 {
     display: grid;
+    align-items: center;
     gap: var(--gap40);
+    grid-template-areas: 
+        'registration-user registration-password registration-re-password'
+        'registration-mail registration-checkbox registration-checkbox'
+        'registration-name registration-surname registration-dad'
+        'registration-code registration-captcha registration-submit';
 }
 
+#registration-user
+{
+    grid-area: registration-user;
+}
+
+#registration-password
+{
+    grid-area: registration-password;
+}
+
+#registration-re-password
+{
+    grid-area: registration-re-password;
+}
+
+#registration-mail
+{
+    grid-area: registration-mail;
+}
+
+#registration-checkbox
+{
+    grid-area: registration-checkbox;
+}
+
+#registration-checkbox label
+{
+    /* display: block; */
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    user-select: none;
+}
+
+#registration-checkbox [type="checkbox"]
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+#registration-checkbox .checkmark
+{
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid var(--input);
+}
+
+#registration-checkbox  label [type="checkbox"]:checked ~ .checkmark
+{
+    border-color: var(--media);
+}
+
+#registration-checkbox .checkmark:after
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#registration-checkbox label [type="checkbox"]:checked ~ .checkmark:after
+{
+    display: block;
+}
+
+#registration-checkbox label .checkmark:after
+{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--media);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+#registration-name
+{
+    grid-area: registration-name;
+}
+
+#registration-surname
+{
+    grid-area: registration-surname;
+}
+
+#registration-dad
+{
+    grid-area: registration-dad;
+}
+
+#registration-code
+{
+    grid-area: registration-code;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+}
+
+#registration-captcha
+{
+    grid-area: registration-captcha;
+}
+
+#registration-submit
+{
+    grid-area: registration-submit;
+
+    text-align: right;
+}
+
+#registration [type="text"],
+#registration [type="password"],
+#registration [type="email"]
+{
+    height: 50px;
+    width: 100%;
+    padding: var(--gap20);
+    border: 1px solid var(--input);
+    outline: none;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+}
+
+#registration [type="submit"]
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    text-align: center;
+    color: var(--body);
+    text-transform: uppercase;
+    background: var(--media);
+    border: none;
+    width: 200px;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+#registration [type="text"]:focus
+{
+    border-color: var(--media);
+}
+
+/**/
 #login
 {
+    width: 400px;
+    margin: auto;
+    background: var(--comment);
+    padding: var(--gap40);
+}
 
+#login p
+{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    color: var(--black);
+    margin: 0 0 var(--gap20);
+}
+
+#login div
+{
+    margin: 0 0 var(--gap20);
+}
+
+#login [type="text"],
+#login [type="password"]
+{
+    height: 50px;
+    width: 100%;
+    padding: var(--gap20);
+    border: 1px solid var(--input);
+    outline: none;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+}
+
+#login-checkbox label
+{
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    user-select: none;
+}
+
+#login-checkbox [type="checkbox"]
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+#login-checkbox .checkmark
+{
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid var(--input);
+}
+
+#login-checkbox  label [type="checkbox"]:checked ~ .checkmark
+{
+    border-color: var(--media);
+}
+
+#login-checkbox .checkmark:after
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+#login-checkbox label [type="checkbox"]:checked ~ .checkmark:after
+{
+    display: block;
+}
+
+#login-checkbox label .checkmark:after
+{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--media);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+#login-recovery
+{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+}
+
+#login [type="submit"]
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    letter-spacing: -0.015em;
+    text-align: center;
+    color: var(--body);
+    text-transform: uppercase;
+    background: var(--media);
+    border: none;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    cursor: pointer;
+}
+
+#registration a, 
+#login a 
+{
+    color: var(--media);
+    text-decoration: underline;
+}
+
+#registration a:hover, 
+#login a:hover 
+{
+    text-decoration: none;
 }

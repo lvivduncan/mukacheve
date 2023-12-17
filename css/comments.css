@@ -91,7 +91,7 @@
     text-align: left;
     color: var(--black);
 
-    border: 1px solid #CCD0D9;
+    border: 1px solid var(--input);
     outline: none;
     padding: var(--gap20);
     transition: border .5s;
