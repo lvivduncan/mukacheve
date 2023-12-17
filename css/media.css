@@ -1,9 +1,14 @@
 /*
-media tabs
+media tabs && video
 */
 
 #media
 {
     background: var(--media);
     padding: var(--gap40) 0;
+}
+
+#media .title 
+{
+    color: var(--body);
 }

@@ -11,7 +11,7 @@
     margin: var(--gap20) 0
 }
 
-.others-posts :first-child
+.others-posts > :first-child
 {
     grid-column: 1 / -1;
     width: 100%;
@@ -53,4 +53,56 @@
     font-family: Roboto;
     font-size: 16px;
     font-weight: 700;
+}
+
+/*
+video (media)
+*/
+
+#media .others-posts
+{
+    /**/
+}
+
+
+#media .others-posts article h1 a
+{
+    color: var(--body);
+}
+
+#media .view 
+{
+    color: var(--body);
+}
+
+#media .view::before {
+    background-image: url('data:image/svg+xml,%3Csvg width="16" height="10" viewBox="0 0 16 10" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M15.7467 4.67089C15.6059 4.48848 12.2571 0.199951 8 0.199951C3.74293 0.199951 0.3936 4.48848 0.253333 4.67089L0 4.99995L0.253333 5.32902C0.3936 5.51142 3.74293 9.79995 8 9.79995C12.2571 9.79995 15.6059 5.51142 15.7467 5.32902L16 4.99995L15.7467 4.67089ZM8 7.66662C6.52747 7.66662 5.33333 6.47248 5.33333 4.99995C5.33333 3.52742 6.52747 2.33328 8 2.33328C9.47253 2.33328 10.6667 3.52742 10.6667 4.99995C10.6667 6.47248 9.47253 7.66662 8 7.66662Z" fill="%23ffffff"/%3E%3C/svg%3E%0A');
+}
+
+#media .others-posts article > a
+{
+    position: relative;
+    display: block;
+}
+
+#media .others-posts article > a::after 
+{
+    content: '';
+    background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Ccircle cx='25' cy='25' r='20' fill='white' stroke='white' stroke-width='10'/%3E%3Cpath d='M18.8253 14.25L37.5753 25.0753L18.8253 35.9006L18.8253 14.25Z' fill='%234693DD'/%3E%3C/svg%3E");
+
+    position: absolute;
+    top: calc(50% - 25px);
+    left: calc(50% - 25px);
+    z-index: 1;
+
+    width: 50px;
+    height: 50px;
+}
+
+#media .comment {
+    color: var(--body);
+}
+
+#media .comment::before {
+    background-image: url('data:image/svg+xml,%3Csvg width="16" height="14" viewBox="0 0 16 14" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M8 0.476807C3.58187 0.476807 0 2.86454 0 5.81014C0 7.40107 1.05067 8.82507 2.70773 9.80214L1.5328 13.5232L5.7552 10.9269C6.46773 11.0656 7.21973 11.1435 7.99947 11.1435C12.4176 11.1435 15.9995 8.75574 15.9995 5.81014C16 2.86454 12.4181 0.476807 8 0.476807Z" fill="%23ffffff"/%3E%3C/svg%3E');
 }
