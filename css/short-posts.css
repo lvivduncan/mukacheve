@@ -1,0 +1,47 @@
+/*
+short preview (image + title)
+*/
+
+.short
+{
+    padding: var(--gap20) 0 0;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: var(--gap20);
+    border-top: 1px solid var(--short);
+    margin: 0 0 var(--gap20)
+}
+
+.short h1
+{
+    line-height: 10px;
+}
+
+.short h1 a
+{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--strong-link);
+    text-decoration: none;
+    display: block;
+    transition: color .5s;
+}
+
+.short h1 a:hover
+{
+    color: var(--media);
+}
+
+/*
+3 column
+*/
+
+.short-three-column
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 0 var(--gap40);
+    margin: var(--gap40) 0;
+}
