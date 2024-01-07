@@ -35,3 +35,8 @@
 {
     margin: var(--gap20) 0;    
 }
+
+#a10
+{
+    margin: 0 0 var(--gap20);       
+}
