@@ -500,8 +500,44 @@ main a:hover
     background-image: url("data:image/svg+xml,%3Csvg width='50' height='50' viewBox='0 0 50 50' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M5 25C5 13.9543 13.9543 5 25 5C36.0457 5 45 13.9543 45 25C45 36.0457 36.0457 45 25 45C13.9543 45 5 36.0457 5 25Z' fill='%234693DD'/%3E%3Cpath d='M17.9794 23.9102C17.9794 23.9102 25.0554 20.9282 27.5104 19.8842C28.4494 19.4632 31.6414 18.1192 31.6414 18.1192C31.6414 18.1192 33.1134 17.5332 32.9934 18.9602C32.9564 19.5462 32.6254 21.6042 32.2944 23.8272C31.8064 26.9742 31.2734 30.4142 31.2734 30.4142C31.2734 30.4142 31.1904 31.3832 30.4994 31.5492C29.8004 31.7142 28.6594 30.9632 28.4564 30.7902C28.2914 30.6632 25.3924 28.7772 24.3254 27.8532C24.0404 27.5982 23.7094 27.0942 24.3624 26.5082C25.8344 25.1262 27.5924 23.3982 28.6584 22.3102C29.1464 21.8072 29.6424 20.6272 27.5914 22.0552C24.6854 24.1132 21.8234 26.0432 21.8234 26.0432C21.8234 26.0432 21.1704 26.4642 19.9454 26.0882C18.7204 25.7132 17.2864 25.2092 17.2864 25.2092C17.2864 25.2092 16.3034 24.5862 17.9794 23.9102Z' fill='white'/%3E%3C/svg%3E");
 }
 
+/* опис реклами у синьому блоці */
+
+.description
+{
+    background: var(--media);
+    color: var(--body);
+    margin: var(--gap20) 0;
+    padding: var(--gap40);
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap20);
+}
+
+.description ul 
+{
+    display: block;
+}
+
+.description li 
+{
+    display: grid;
+    grid-template-columns: 200px 1fr;
+    gap: var(--gap20)
+}
+
+.description a
+{
+    color: var(--body)!important;
+    text-decoration: underline;
+}
+
+.description a:hover 
+{
+    text-decoration: none;
+}
 
 /**/
+
 .tags
 {
     display: flex;
@@ -529,6 +565,7 @@ main a:hover
     border-radius: 12px;
     padding: 5px 7px;
     text-decoration: none!important;
+    font-weight: 700;
 }
 
 

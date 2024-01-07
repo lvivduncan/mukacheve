@@ -1,0 +1,53 @@
+/*
+notices at aside
+*/
+
+.notices
+{
+    margin: 0 0 var(--gap40);
+}
+
+.notices article
+{
+    display: grid;
+    grid-template-columns: 120px 160px;
+    gap: var(--gap10) var(--gap20);
+    border-top: 1px solid var(--border-post);
+    padding-top: var(--gap15);
+    padding-bottom: var(--gap10);
+}
+
+.notices h1
+{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 20px;
+    position: relative;
+    top: -3px;
+}
+
+.notices h1 a 
+{
+    text-decoration: none;
+    font-weight: 700;
+    color: var(--strong-link);
+    transition: color .5s;
+}
+
+.notices h1 a:hover 
+{
+    color: var(--media);
+}
+
+.notices article time 
+{
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: 0;
+    color: var(--border);
+    position: relative;
+    top: -3px;
+}
