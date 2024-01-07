@@ -1,0 +1,75 @@
+/*
+header search and search page
+*/
+
+#search-form
+{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: var(--gap40);
+    margin: 0 0 var(--gap40)
+}
+
+#search-form [type="search"]
+{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    height: 50px;
+    line-height: 50px;
+    letter-spacing: -0.015em;
+    /* text-align: left; */
+    color: var(--black);
+
+    border: 1px solid var(--input);
+    outline: none;
+    padding: var(--gap20);
+    transition: border .5s;
+}
+
+#search-form [type="search"]:focus 
+{
+    border-color: var(--media)
+}
+
+#search-form [type="submit"]
+{
+    background: var(--media);
+    /* text-align: center; */
+    color: var(--body);
+    border: none;
+    cursor: pointer;
+    height: 50px;
+
+    font-family: Roboto;
+    font-size: 14px;
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: -0.015em;
+    text-align: center;
+}
+
+#search-result > ul,
+#search-result > ul > li
+{
+    display: block;
+}
+
+#search-result > ul > li a 
+{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-decoration: none;
+    color: var(--black);
+    display: block;
+    margin: 0 0 var(--gap20);
+    padding: var(--gap20) 0 0;
+    border-top: 1px solid var(--search);
+}
+
+#search-result > ul > li a:hover 
+{
+    text-decoration: underline;
+}
