@@ -73,3 +73,32 @@ header search and search page
 {
     text-decoration: underline;
 }
+
+/*
+search-popup result
+*/
+
+.search-popup
+{
+    position: relative;
+    overflow: hidden;
+}
+
+.search-popup::after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 1;
+    background: rgba(158, 158, 158, 0.5);
+}
+
+.search-popup #search-form
+{
+    position: relative;
+    z-index: 2;
+    background: var(--body);
+}
