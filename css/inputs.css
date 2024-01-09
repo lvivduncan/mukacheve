@@ -1,0 +1,90 @@
+
+label.mark
+{
+    position: relative;
+    padding-left: 35px;
+    cursor: pointer;
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    letter-spacing: -0.015em;
+    user-select: none;
+}
+
+.vote label.mark
+{
+    font-size: 24px;
+    color: var(--body);
+}
+
+label.mark [type="checkbox"],
+label.mark [type="radio"]
+{
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+label.mark .checkbox
+{
+    position: absolute;
+    top: -2px;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    border: 1px solid var(--input);
+}
+
+label.mark .radio
+{
+    position: absolute;
+    top: 1px;
+    left: 0;
+    height: 24px;
+    width: 24px;
+    border: 1px solid var(--input);
+    border-radius: 50%;
+}
+
+label.mark [type="checkbox"]:checked ~ .checkbox,
+label.mark [type="checkbox"]:checked ~ .radio
+{
+    border-color: var(--media);
+}
+
+label.mark .checkbox:after,
+label.mark .radio:after
+{
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+label.mark [type="checkbox"]:checked ~ .checkbox:after,
+label.mark [type="radio"]:checked ~ .radio:after
+{
+    display: block;
+}
+
+label.mark .checkbox:after
+{
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid var(--media);
+    border-width: 0 3px 3px 0;
+    transform: rotate(45deg);
+}
+
+label.mark .radio:after
+{
+    left: 7px;
+    top: 7px;
+    width: 8px;
+    height: 8px;
+    background: var(--input);
+    border-radius: 50%;
+}

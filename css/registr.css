@@ -227,7 +227,7 @@
     line-height: 24px;
     letter-spacing: -0.015em;
 }
-
+/* 
 #login-checkbox label
 {
     position: relative;
@@ -285,7 +285,7 @@
     border: solid var(--media);
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
-}
+} */
 
 #login-recovery
 {

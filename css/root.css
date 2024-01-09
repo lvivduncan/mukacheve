@@ -8,6 +8,8 @@
     --gap30: 30px;
     --gap40: 40px;
     --gap60: 60px;
+    --gap80: 80px;
+    --gap100: 100px;
     --border: #999;
     --border-post: #ccc;
     --border-button: #e5e7eb;
@@ -34,15 +36,10 @@
     font-weight: 400;
 }
 
-/* a 
+.text-center
 {
-    text-decoration: none;
+    text-align: center;
 }
-
-a:hover 
-{
-    color: var(--media);
-} */
 
 body,html
 {
