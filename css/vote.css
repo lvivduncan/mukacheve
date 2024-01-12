@@ -37,37 +37,83 @@ result
 .vote-result
 {
     background: var(--media);
-    padding: var(--gap40) var(--gap80);    
+    padding: var(--gap40) var(--gap80);
+    display: block;
 }
 
-progress
+.vote-result li 
 {
-    width: 100%;
-    height: 20px;
+    display: grid;
+    grid-template-areas: 
+        'vote-p vote-p'
+        'vote-progress vote-label';
+    grid-template-columns: 1fr 180px;
+    gap: var(--gap30);
+    margin: 0 0 var(--gap30);
+    align-items: center;
+}
+
+.vote-result p 
+{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--body);
+    display: block;
+    /* margin: 0 0 var(--gap20); */
+
+    grid-area: vote-p;
+}
+
+.vote-result progress 
+{
+    display: block;
     border-radius: 0;
+    width: 100%;
+    height: 22px;
 
-    position: relative;
+    grid-area: vote-progress;
 }
 
-progress::before
+.vote-result progress::-webkit-progress-bar
 {
-    content: '';
-    position: absolute;
-    top:0;
-    left: 0;
-    width: 100%;
-    height: 20px;
     background: var(--footer);
 }
 
-progress::after
+.vote-result progress::-moz-progress-bar
 {
-    content: '';
-    position: absolute;
-    top:0;
-    left:0;
-    width: 70%;
-    height: 20px;
+    background: var(--footer);
+}
+
+.vote-result progress::-webkit-progress-value
+{
     background: var(--body);
-    z-index: 2;
+}
+
+.vote-result label 
+{
+    grid-area: vote-label;
+
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    color: var(--body);
+}
+
+.vote-result label strong 
+{
+    font-size: 30px;
+    font-weight: 700;
+}
+
+.vote-result-all
+{
+    font-family: Roboto;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 30px;
+    text-transform: uppercase;
+    color: var(--body);
 }
