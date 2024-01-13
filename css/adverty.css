@@ -65,6 +65,7 @@
     display: grid;
     grid-template-columns: repeat(2,1fr) 200px;
     gap: var(--gap20);
+    margin: 0 0 var(--gap40)
 }
 
 #adverty-filter [type="submit"]

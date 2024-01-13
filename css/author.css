@@ -1,0 +1,43 @@
+#author-description
+{
+    display: grid;
+    grid-template-areas: 
+        'author-picture author-description';
+    grid-template-columns: 120px 1fr;
+    gap: var(--gap20);
+    border-top: var(--search) 1px solid;
+    padding-top: var(--gap10);
+    align-items: center;
+    margin: 0 0 var(--gap40);
+}
+
+#author-description .picture
+{
+    grid-area: author-picture;
+
+    border-radius: 50%;
+    min-height: 120px;
+}
+
+.author-description 
+{
+    grid-area: author-description;
+}
+
+#author-description h1
+{
+    font-family: Roboto;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 20px;
+    color: var(--media);
+    margin: 0 0 var(--gap10);
+}
+
+#author-description p
+{
+    font-family: Roboto;
+    font-size: 16px;
+    font-weight: 300;
+    line-height: 20px;
+}
