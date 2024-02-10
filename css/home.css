@@ -9,3 +9,25 @@
     gap: var(--gap40);
 }
 
+@media(max-width: 1340px)
+{
+    #home-main-column
+    {
+        grid-template-columns: 1fr;
+    }
+
+    #home-main-center
+    {
+        order: 1;
+    }
+
+    #home-main-left
+    {
+        order: 2;
+    }
+
+    #home-main-right
+    {
+        order: 3;
+    }
+}
