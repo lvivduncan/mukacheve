@@ -13,7 +13,8 @@ hot post right in home page
     grid-template-areas: 
         'hot-posts-picture hot-posts-h1'
         'hot-posts-picture hot-posts-time';
-    grid-template-columns: 120px 160px;
+    /* grid-template-columns: 120px 160px; */
+    grid-template-columns: 120px 1fr;
     gap: var(--gap10) var(--gap20);
     align-items: start;
     border-top: 1px solid var(--border-post);

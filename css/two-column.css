@@ -7,6 +7,14 @@
     margin: var(--gap40) 0;
 }
 
+@media(max-width:996px)
+{
+    .two-column
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
 .two-column div
 {
     counter-reset: section;
