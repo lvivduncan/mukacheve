@@ -1,4 +1,4 @@
-
+/* index -- del */
 /* 300 1fr 300 */
 #home-main-column
 {
@@ -30,4 +30,50 @@
     {
         order: 3;
     }
+}
+/* index -- del */
+
+/*23-02-2024*/
+#home
+{
+    padding: var(--gap20) 0;
+    display: grid;
+    grid-template-columns: 300px 1fr 300px;
+    gap: var(--gap20) var(--gap40);
+
+    grid-template-areas: 
+        'home-4 home-1 home-2'
+        'home-4 home-3 home-6'
+        'home-4 home-5 home-6'
+}
+
+#hot-single-post
+{
+    grid-area: home-1;
+}
+
+#home-2
+{
+    grid-area: home-2;
+}
+
+#home-3
+{
+    grid-area: home-3;
+}
+
+#home-4
+{
+    grid-area: home-4;
+}
+
+#home-5
+{
+    grid-area: home-5;
+    margin-top: -30px;
+}
+
+#home-6
+{
+    grid-area: home-6;
 }

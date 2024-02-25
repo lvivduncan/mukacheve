@@ -39,9 +39,11 @@ hot post right in home page
     font-size: 16px;
     font-weight: 700;
     line-height: 20px;
-    /* letter-spacing: 0; */
     position: relative;
     top: -3px;
+
+    overflow: hidden;
+    height: 58px;
 }
 
 #hot-posts h1 a 
