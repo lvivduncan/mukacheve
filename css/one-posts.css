@@ -15,7 +15,7 @@ title + single posts
 .one-posts article
 {
     display: grid;
-    grid-template-columns: 120px 160px;
+    grid-template-columns: 120px 1fr;
     grid-template-areas: 
         'four-post-picture four-post-time'
         'four-post-picture four-post-h1';

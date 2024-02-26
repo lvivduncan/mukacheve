@@ -62,7 +62,7 @@ hot post right in home page
     top: -3px;
 
     overflow: hidden;
-    height: 58px;
+    max-height: 58px;
 }
 
 @media(max-width:1340px)

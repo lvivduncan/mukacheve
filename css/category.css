@@ -4,22 +4,158 @@
 
 #category
 {
+    width: 1320px;
+    margin: var(--gap20) auto;
     display: grid;
     grid-template-columns: repeat(3, 1fr) 300px;
     grid-template-areas: 
-        ''
+        'cat-0 cat-0 cat-0 cat-11'
+        'home-1 home-1 cat-2 cat-11'
+        'cat-3 cat-3 cat-3 cat-11'
+        'cat-4 cat-4 cat-6 cat-11'
+        'cat-7 cat-7 cat-7 cat-11'
+        'cat-8 cat-9 cat-10 cat-11';
+    gap: var(--gap20) var(--gap40);
 }
-    
-.div1 { grid-area: 1 / 1 / 2 / 3; }
-.div2 { grid-area: 1 / 3 / 2 / 4; }
-.div3 { grid-area: 2 / 1 / 3 / 4; }
-.div4 { grid-area: 3 / 1 / 5 / 3; }
-.div5 { grid-area: 3 / 3 / 4 / 4; }
-.div6 { grid-area: 4 / 3 / 5 / 4; }
-.div7 { grid-area: 5 / 1 / 6 / 4; }
-.div8 { grid-area: 6 / 1 / 7 / 2; }
-.div9 { grid-area: 6 / 2 / 7 / 3; }
-.div10 { grid-area: 6 / 3 / 7 / 4; }
-.div11 { grid-area: 1 / 4 / 7 / 5; }
 
+@media(max-width:1340px)
+{
+    #category
+    {
+        width: 95%;
+    }
+}
 
+@media(max-width:1100px)
+{
+    #category
+    {
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-areas: 
+            'cat-0 cat-0 cat-11'
+            'home-1 cat-2 cat-11'
+            'cat-3 cat-3 cat-11'
+            'cat-4 cat-6 cat-11'
+            'cat-7 cat-7 cat-11'
+            'cat-8 cat-9 cat-10'
+
+    }
+}
+
+@media(max-width:996px)
+{
+    #category
+    {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            'cat-0'
+            'home-1'
+            'cat-2'
+            'cat-3'
+            'cat-4'
+            'cat-5'
+            'cat-6'
+            'cat-7'
+            'cat-8'
+            'cat-9'
+            'cat-10'
+            'cat-11'
+
+    }
+}
+
+/* title */
+#cat-0
+{
+    grid-area: cat-0;
+    margin: 0;
+    padding: 0 0 var(--gap10);
+    border-bottom: 1px solid var(--border-button)
+}
+
+#category > #hot-posts
+{
+    grid-area: cat-2;
+}
+
+/* baner */
+#cat-3
+{
+    grid-area: cat-3;
+    overflow: hidden;
+}
+
+#cat-3 img 
+{
+    max-width: fit-content;
+}
+
+#cat-4
+{
+    grid-area: cat-4;
+    margin: 0;
+}
+
+#cat-4 .title
+{
+    margin: 0 0 var(--gap15)
+}
+
+/* рекламний банер, який з'являється на мобільному */
+#cat-5
+{
+    grid-area: cat-5;
+    display: none;
+}
+
+#cat-6
+{
+    grid-area: cat-6;
+    margin: 0;
+}
+
+/*
+todo: перевірити, чи потрібні відступи для блоків .one-post взагалі
+*/
+#cat-6 .one-posts
+{
+    margin: 0;
+}
+
+/* #cat-7
+{
+    grid-area: cat-7;
+    margin: 0;
+} */
+
+/* baner */
+#cat-7
+{
+    grid-area: cat-7;
+    overflow: hidden;
+}
+
+#cat-7 img 
+{
+    max-width: fit-content;
+}
+
+#cat-8
+{
+    grid-area: cat-8;
+}
+
+#cat-9
+{
+    grid-area: cat-9;
+}
+
+#cat-10
+{
+    grid-area: cat-10;
+}
+
+#cat-11
+{
+    grid-area: cat-11;
+}
