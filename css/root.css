@@ -374,6 +374,14 @@ picture source
     }    
 }
 
+@media(max-width:540px)
+{
+    #feedback
+    {
+        flex-direction: column-reverse;
+    }   
+}
+
 #feedback li
 {
     display: block;
@@ -406,12 +414,21 @@ picture source
     }
 }
 
+@media(max-width:540px)
+{
+    #feedback a
+    {
+        display: block;
+        padding: var(--gap10)
+    }
+}
+
 #feedback a:hover 
 {
     text-decoration: none;
 }
 
-#feedback a.enter 
+#feedback .enter a 
 {
     font-family: Roboto;
     font-size: 14px;
@@ -422,6 +439,21 @@ picture source
     text-decoration: none;
     text-transform: uppercase;
     color: var(--media);
+}
+
+@media(max-width:1340px)
+{
+    #feedback .enter
+    {
+        order: -1;
+    }
+    
+    #feedback .enter a 
+    {
+        color: var(--body);
+        text-align: left;
+        order: -1;
+    }
 }
 
 #menu nav 
@@ -443,6 +475,15 @@ picture source
     margin-right: var(--gap30);
 }
 
+@media(max-width:540px)
+{
+    #primary li 
+    {
+        width: 50%;
+        margin: 0;
+    }
+}
+
 #primary li a
 {
     font-family: Roboto;
@@ -454,6 +495,15 @@ picture source
     color: var(--black);
     text-decoration: none;
     transition: color .5s;
+}
+
+@media(max-width:540px)
+{
+    #primary li a
+    {
+        display: block;
+        padding: var(--gap10);
+    }
 }
 
 #primary li a:hover,
@@ -484,6 +534,14 @@ picture source
     margin-right: var(--gap20);
 }
 
+@media(max-width:540px)
+{
+    #secondary li 
+    {
+        width: 50%;
+    }
+}
+
 #secondary li a
 {
     font-family: Roboto;
@@ -492,6 +550,15 @@ picture source
     line-height: 19px;
     color: var(--black);
     text-decoration: none;
+}
+
+@media(max-width:540px)
+{
+    #secondary li a
+    {
+        display: block;
+        padding: var(--gap10);
+    }
 }
 
 #secondary li a:hover 
