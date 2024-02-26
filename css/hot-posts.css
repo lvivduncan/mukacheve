@@ -22,6 +22,15 @@ hot post right in home page
     padding-bottom: var(--gap10);
 }
 
+@media(max-width:520px)
+{
+    #hot-posts article
+    {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+}
+
 #hot-posts article:first-child
 {
     border: none;
@@ -32,6 +41,15 @@ hot post right in home page
 {
     grid-area: hot-posts-picture;
 }
+
+@media(max-width:520px)
+{
+    #hot-posts article .picture
+    {
+        display: none;
+    }    
+}
+
 #hot-posts h1
 {
     grid-area: hot-posts-h1;
@@ -45,6 +63,17 @@ hot post right in home page
 
     overflow: hidden;
     height: 58px;
+}
+
+@media(max-width:1340px)
+{
+    #hot-posts h1
+    {
+        position: static;
+        height: auto;
+        overflow: auto;
+        position: static;
+    }
 }
 
 #hot-posts h1 a 

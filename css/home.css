@@ -42,9 +42,16 @@
     grid-area: home-2;
 }
 
+/* baner! */
 #home-3
 {
     grid-area: home-3;
+    overflow: hidden;
+}
+
+#home-3 img 
+{
+    max-width: fit-content;
 }
 
 #home-4

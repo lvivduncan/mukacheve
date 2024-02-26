@@ -1,8 +1,16 @@
 /* adverty */
+
+/* 1 baner (top baner) */
 #a1
 {
     text-align: center;
     margin: 2px 0;
+    overflow: hidden;
+}
+
+#a1 img 
+{
+    max-width: fit-content;
 }
 
 #a2
