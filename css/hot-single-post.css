@@ -48,6 +48,14 @@ hot-single-post block - home page, category page
     margin: 0 0 var(--gap20)
 }
 
+@media(max-width:540px)
+{
+    #hot-single-post h1
+    {
+        display: inline;
+    }
+}
+
 #hot-single-post h1 a 
 {
     font-family: Roboto;
@@ -83,6 +91,14 @@ hot-single-post block - home page, category page
     color: var(--body);
 }
 
+@media(max-width:540px)
+{
+    #hot-single-post time
+    {
+        display: none;
+    }
+}
+
 #hot-single-post .comment
 {
     font-family: Roboto;
@@ -93,6 +109,14 @@ hot-single-post block - home page, category page
     /* text-align: left; */
     color: var(--body);
     margin-left: var(--gap20);
+}
+
+@media(max-width:540px)
+{
+    #hot-single-post .comment
+    {
+        display: inline;
+    }
 }
 
 #hot-single-post .comment::before

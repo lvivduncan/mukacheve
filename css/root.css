@@ -447,12 +447,11 @@ picture source
     {
         order: -1;
     }
-    
+
     #feedback .enter a 
     {
         color: var(--body);
         text-align: left;
-        order: -1;
     }
 }
 
