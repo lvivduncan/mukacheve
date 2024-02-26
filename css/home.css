@@ -2,6 +2,8 @@
 /*23-02-2024*/
 #home
 {
+    width: 1320px;
+    margin: auto;
     padding: var(--gap20) 0;
     display: grid;
     grid-template-columns: 300px 1fr 300px;
@@ -17,8 +19,7 @@
 {
     #home
     {
-        /* padding: var(--gap20) 0; */
-        /* display: grid; */
+        width: 95%;
         grid-template-columns: 1fr;
         /* gap: var(--gap20) var(--gap40); */
 
