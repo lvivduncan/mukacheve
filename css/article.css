@@ -1,0 +1,122 @@
+/*
+grid-layout for article
+*/
+
+#article
+{
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    gap: var(--gap20) var(--gap40);
+    width: 1320px;
+    margin: var(--gap30) auto;
+    grid-template-areas:
+        'article-1 article-4'
+        'article-2 article-4'
+        'article-3 article-4'
+        'article-5 article-5'
+        'article-6 article-6';
+}
+
+@media(max-width:1340px)
+{
+    #article
+    {
+        width: 95%;
+    }
+}
+
+@media(max-width:1100px)
+{
+    #article
+    {
+        display: flex;
+        flex-flow: column;
+    }
+}
+
+#article main
+{
+    grid-area: article-1;
+}
+
+/* якщо не буде банера -- картинка буде налізати на контент внизу */
+#article main .picture 
+{
+    margin-bottom: var(--gap20);
+}
+
+/* baner */
+#article-b-1
+{
+    grid-area: article-2;
+    overflow: hidden;
+}
+
+@media(max-width:1100px)
+{
+    #article-b-1 img 
+    {
+        max-width: none;
+    }
+}
+
+#article #comments
+{
+    grid-area: article-3;
+}
+
+#article .news-posts
+{
+    grid-area: article-4;
+}
+
+/* baner */
+#article-b-2
+{
+    overflow: hidden;
+    display: none;
+}
+
+@media(max-width:1100px)
+{
+    #article-b-2
+    {
+        display: block;
+    }
+
+    #article-b-2 img 
+    {
+        max-width: none;
+    }
+}
+
+
+#article .others-posts
+{
+    grid-area: article-5;
+}
+
+#article-b-3
+{
+    overflow: hidden;
+    grid-area: article-6;
+}
+
+#article-b-3 img
+{
+    max-width: none
+}
+
+#article-b-4
+{
+    overflow: hidden;
+    margin: var(--gap30) 0
+}
+
+@media(max-width:1100px)
+{
+    #article-b-4 img
+    {
+        max-width: none;
+    }
+}

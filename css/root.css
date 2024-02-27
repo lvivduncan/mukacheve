@@ -659,7 +659,6 @@ picture source
     }
 }
 
-
 main h1
 {
     font-family: Ubuntu;
@@ -667,6 +666,15 @@ main h1
     font-weight: 700;
     line-height: 36px;
     margin: 0 0 var(--gap20)
+}
+
+@media(max-width:540px)
+{
+    main h1
+    {
+        font-size: 30px;
+        line-height: 30px;
+    }
 }
 
 .service
@@ -684,12 +692,29 @@ main h1
     gap: var(--gap20);
 }
 
+@media(max-width:996px)
+{
+    #main-content
+    {
+        grid-template-columns: 1fr;
+    }    
+}
+
 #main-content h2 
 {
     margin: 0 0 var(--gap20);
     font-weight: 700;
+    font-size: 24px;
+    line-height: 30px;
 }
 
+@media(max-width:540px)
+{
+    #main-content h2 
+    {
+        font-size: 21px;
+    }    
+}
 /* main h2 
 {
     margin: 0 0 var(--gap20);
@@ -743,6 +768,14 @@ main a:hover
     display: flex;
     align-items: flex-start;
     gap: var(--gap10)
+}
+
+@media(max-width:996px)
+{
+    .share 
+    {
+        justify-content: center;
+    }
 }
 
 .share li 
@@ -819,6 +852,7 @@ main a:hover
     display: flex;
     gap: var(--gap10);
     align-items: center;
+    flex-wrap: wrap;
 }
 
 .tags::before
@@ -849,7 +883,7 @@ main a:hover
 {
     background: var(--footer);
     min-height: 300px;
-    padding: 70px 0 0;
+    padding: 70px 0 var(--gap20);
     color: var(--body);
 }
 

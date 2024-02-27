@@ -71,7 +71,7 @@ hot post right in home page
     {
         position: static;
         height: auto;
-        overflow: auto;
+        /* overflow: auto; */
         position: static;
     }
 }

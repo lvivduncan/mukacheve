@@ -8,13 +8,9 @@
 
 @import url('./home.css');
 
-/**/
-/* @import url('./grid-home.css'); */
-
-/**/
-/* @import url('./flex-home.css'); */
-
 @import url('./category.css');
+
+@import url('./article.css');
 
 @import url('./hot-post-and-posts.css');
 

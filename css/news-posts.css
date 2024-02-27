@@ -41,6 +41,14 @@ long aside posts
     transition: color .5s;
 }
 
+@media(max-width:1100px)
+{
+    .news-posts article h1 a
+    {
+        font-size: 16px;
+    }
+}
+
 .news-posts article h1 a strong
 {
     font-weight: 700;
