@@ -19,11 +19,33 @@
     display: grid;
     align-items: center;
     gap: var(--gap40);
+    grid-template-columns: repeat(3,1fr);
     grid-template-areas: 
         'registration-user registration-password registration-re-password'
         'registration-mail registration-checkbox registration-checkbox'
         'registration-name registration-surname registration-dad'
         'registration-code registration-captcha registration-submit';
+}
+
+@media(max-width:776px)
+{
+    #registration form 
+    {
+        grid-template-columns: 100%;
+        grid-template-areas: 
+            'registration-user'
+            'registration-password'
+            'registration-re-password'
+            'registration-mail'
+            'registration-checkbox'
+            /* 'registration-checkbox' */
+            'registration-name'
+            'registration-surname'
+            'registration-dad'
+            'registration-code'
+            'registration-captcha'
+            'registration-submit';        
+    }
 }
 
 #registration-user
@@ -148,6 +170,14 @@
     text-align: right;
 }
 
+@media(max-width:776px)
+{
+    #registration-submit
+    {
+        text-align: left;
+    }
+}
+
 #registration [type="text"],
 #registration [type="password"],
 #registration [type="email"]
@@ -182,7 +212,9 @@
     cursor: pointer;
 }
 
-#registration [type="text"]:focus
+#registration [type="text"]:focus,
+#registration [type="password"]:focus,
+#registration [type="email"]:focus
 {
     border-color: var(--media);
 }
@@ -194,6 +226,14 @@
     margin: auto;
     background: var(--comment);
     padding: var(--gap40);
+}
+
+@media(max-width:540px)
+{
+    #login
+    {
+        width: 95%;
+    }
 }
 
 #login p
@@ -227,65 +267,6 @@
     line-height: 24px;
     letter-spacing: -0.015em;
 }
-/* 
-#login-checkbox label
-{
-    position: relative;
-    padding-left: 35px;
-    cursor: pointer;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 400;
-    letter-spacing: -0.015em;
-    user-select: none;
-}
-
-#login-checkbox [type="checkbox"]
-{
-    position: absolute;
-    opacity: 0;
-    cursor: pointer;
-    height: 0;
-    width: 0;
-}
-
-#login-checkbox .checkmark
-{
-    position: absolute;
-    top: -2px;
-    left: 0;
-    height: 25px;
-    width: 25px;
-    border: 1px solid var(--input);
-}
-
-#login-checkbox  label [type="checkbox"]:checked ~ .checkmark
-{
-    border-color: var(--media);
-}
-
-#login-checkbox .checkmark:after
-{
-    content: "";
-    position: absolute;
-    display: none;
-}
-
-#login-checkbox label [type="checkbox"]:checked ~ .checkmark:after
-{
-    display: block;
-}
-
-#login-checkbox label .checkmark:after
-{
-    left: 9px;
-    top: 5px;
-    width: 5px;
-    height: 10px;
-    border: solid var(--media);
-    border-width: 0 3px 3px 0;
-    transform: rotate(45deg);
-} */
 
 #login-recovery
 {
