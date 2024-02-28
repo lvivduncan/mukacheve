@@ -20,6 +20,15 @@ full width 3 варіанти:
     display: flex;
 }
 
+@media(max-width:540px)
+{
+    .full-posts article
+    {
+        flex-flow: column;
+        gap: var(--gap15)
+    }
+}
+
 .full-posts time 
 {
     font-family: Roboto;
@@ -27,8 +36,6 @@ full width 3 варіанти:
     font-weight: 400;
     line-height: 20px;
     color: var(--border);
-    margin: 2px 0 0;
-
     width: 40px;
 }
 
@@ -53,7 +60,7 @@ if post contains an image
     {
         grid-template-columns: 120px 1fr;
         grid-template-rows: var(--gap30) 1fr;
-        gap: 0 var(--gap30);
+        gap: 0 var(--gap20);
     }
 }
 
