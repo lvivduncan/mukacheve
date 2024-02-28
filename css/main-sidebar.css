@@ -14,7 +14,7 @@ wide main and narrow sidebar
 {
     .main-sidebar
     {
-        grid-template-columns: 1fr;
+        grid-template-columns: 100%;
     }
 }
 

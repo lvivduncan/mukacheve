@@ -28,10 +28,19 @@
     margin: var(--gap20) 0
 }
 
+/*
+цей банер не масштабується! 
+*/
 #a6
 {
     margin: var(--gap20) 0;
     text-align: center;
+    overflow: hidden;
+}
+
+#a6 img 
+{
+    max-width: none;
 }
 
 #a7
