@@ -10,6 +10,14 @@ wide main and narrow sidebar
     margin: var(--gap40) auto;
 }
 
+@media(max-width:1100px)
+{
+    .main-sidebar
+    {
+        grid-template-columns: 1fr;
+    }
+}
+
 .wide-narrow
 {
     display: grid;

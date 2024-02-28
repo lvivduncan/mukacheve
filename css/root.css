@@ -496,7 +496,7 @@ picture source
     transition: color .5s;
 }
 
-@media(max-width:540px)
+@media(max-width:1100px)
 {
     #primary li a
     {
