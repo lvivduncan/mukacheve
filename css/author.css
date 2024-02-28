@@ -7,8 +7,16 @@
     gap: var(--gap20);
     border-top: var(--search) 1px solid;
     padding-top: var(--gap10);
-    align-items: center;
+    align-items: start;
     margin: 0 0 var(--gap40);
+}
+
+@media(max-width:540px)
+{
+    #author-description
+    {
+        grid-template-columns: 80px 1fr;
+    }
 }
 
 #author-description .picture
@@ -16,7 +24,17 @@
     grid-area: author-picture;
 
     border-radius: 50%;
-    min-height: 120px;
+    height: 120px;
+    width: 120px;
+}
+
+@media(max-width:540px)
+{
+    #author-description .picture
+    {
+        width: 80px;
+        height: 80px;
+    }
 }
 
 .author-description 
