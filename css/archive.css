@@ -1,6 +1,6 @@
 #archive
 {
-    padding: var(--gap60);
+    padding: var(--gap40) 0;
     text-align: center;
 }
 
@@ -49,7 +49,7 @@
 {
     display: grid;
     grid-template-columns: repeat(4,1fr);
-    grid-gap: var(--gap20) var(--gap60);
+    grid-gap: var(--gap20) var(--gap40);
 }
 
 @media(max-width:996px)
@@ -68,7 +68,7 @@
     }
 }
 
-@media(max-width:450px)
+@media(max-width:540px)
 {
     #calendar
     {
