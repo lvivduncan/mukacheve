@@ -5,9 +5,19 @@ header search and search page
 #search-form
 {
     display: grid;
-    grid-template-columns: 1fr 300px;
+    grid-template-columns: calc(100% - 300px - var(--gap40)) 300px;
     gap: var(--gap40);
     margin: 0 0 var(--gap40)
+}
+
+@media(max-width:540px)
+{
+    #search-form
+    {
+        grid-template-columns: 100%;
+        gap: var(--gap20);
+        margin: 0 0 var(--gap30);
+    }
 }
 
 #search-form [type="search"]
@@ -18,7 +28,6 @@ header search and search page
     height: 50px;
     line-height: 50px;
     letter-spacing: -0.015em;
-    /* text-align: left; */
     color: var(--black);
 
     border: 1px solid var(--input);
@@ -35,7 +44,6 @@ header search and search page
 #search-form [type="submit"]
 {
     background: var(--media);
-    /* text-align: center; */
     color: var(--body);
     border: none;
     cursor: pointer;
@@ -47,6 +55,7 @@ header search and search page
     line-height: 24px;
     letter-spacing: -0.015em;
     text-align: center;
+    text-transform: uppercase;
 }
 
 #search-result > ul,
