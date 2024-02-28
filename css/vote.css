@@ -8,6 +8,15 @@ todo: checkbox, radio
     padding: var(--gap40) var(--gap100);
 }
 
+@media(max-width:540px)
+{
+    .vote
+    {
+        /* background: var(--media); */
+        padding: var(--gap20) var(--gap40);
+    }
+}
+
 .vote label 
 {
     display: block;
@@ -28,6 +37,7 @@ todo: checkbox, radio
     border: none;
     width: 200px;
     height: 50px;
+    text-transform: uppercase;
 }
 
 /* 

@@ -17,6 +17,15 @@ label.mark
     color: var(--body);
 }
 
+@media(max-width:540px)
+{
+    .vote label.mark
+    {
+        font-size: 20px;
+        line-height: 25px;
+    }
+}
+
 label.mark [type="checkbox"],
 label.mark [type="radio"]
 {

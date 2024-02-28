@@ -10,7 +10,7 @@ notices at aside
 .notices article
 {
     display: grid;
-    grid-template-columns: 120px 160px;
+    grid-template-columns: 120px 1fr;
     gap: var(--gap10) var(--gap20);
     border-top: 1px solid var(--border-post);
     padding-top: var(--gap15);

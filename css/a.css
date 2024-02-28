@@ -1,6 +1,6 @@
 /* adverty */
 
-/* 1 baner (top baner) */
+/* 1 baner (top baner) не масштабується */
 #a1
 {
     text-align: center;
@@ -10,17 +10,35 @@
 
 #a1 img 
 {
-    max-width: fit-content;
+    max-width: none;
 }
 
+/*
+цей банер не масштабується! 
+*/
 #a2
 {
     margin: var(--gap20) 0;
+    overflow: hidden;
 }
 
+#a2 img 
+{
+    max-width: none;
+}
+
+/*
+цей банер не масштабується! 
+*/
 #a3
 {
-    margin: 0 0 var(--gap20)
+    margin: 0 0 var(--gap20);
+    overflow: hidden;
+}
+
+#a3 img
+{
+    max-width: none;
 }
 
 #a5

@@ -822,6 +822,16 @@ main a:hover
     gap: var(--gap20);
 }
 
+@media(max-width:540px)
+{
+    .description
+    {
+        background: transparent;
+        color: var(--black);
+        padding: 0;
+    }
+}
+
 .description ul 
 {
     display: block;
@@ -834,10 +844,26 @@ main a:hover
     gap: var(--gap20)
 }
 
+@media(max-width:540px)
+{
+    .description li 
+    {
+        display: block;
+    }
+}
+
 .description a
 {
     color: var(--body)!important;
     text-decoration: underline;
+}
+
+@media(max-width:540px)
+{
+    .description a
+    {
+        color: var(--media)!important;
+    }    
 }
 
 .description a:hover 
