@@ -424,7 +424,8 @@ picture source
     }    
 }
 
-#feedback a
+#feedback a,
+#feedback span
 {
     font-family: Roboto;
     font-size: 14px;
@@ -432,11 +433,13 @@ picture source
     line-height: 16px;
     color: var(--footer);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 @media(max-width: 1340px)
 {
-    #feedback a
+    #feedback a,
+    #feedback span
     {
         color: var(--body)
     }
@@ -444,14 +447,16 @@ picture source
 
 @media(max-width:540px)
 {
-    #feedback a
+    #feedback a,
+    #feedback span
     {
         display: block;
         padding: var(--gap10)
     }
 }
 
-#feedback a:hover 
+#feedback a:hover,
+#feedback span:hover 
 {
     text-decoration: none;
 }
