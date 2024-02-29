@@ -146,14 +146,23 @@
 		</header>
 
 		<div class="wrapper">
-			<div class="main-sidebar">
-				<div>
-					<div class="title">Пошук</div>
+			<div class="main-sidebar" id="form-modal-wrapper">
 
-					<form id="search-form">
-						<input type="search" placeholder="Шукати" />
-						<input type="submit" value="Шукати" />
-					</form>
+				<div>
+
+					<div id="form-modal">
+						<div class="title">Пошук</div>
+
+						<form id="search-form">
+							<input type="search" placeholder="Шукати" />
+							<input type="submit" value="Шукати" />
+						</form>
+						
+						<div id="form-close"></div>
+					</div>
+					 <!-- id="form-modal" -->
+
+					 <div class="form-modal"></div>
 
 					<div id="a2">
 						<a href="#"><img src="temp/a1.jpg" alt="" /></a>
@@ -254,6 +263,8 @@
 				</ul>
 			</div>
 		</footer>
+
+		<div id="body-cover"></div>
 
 		<script src="js/script.js"></script>
 	</body>

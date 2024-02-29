@@ -10,7 +10,15 @@ header search and search page
     margin: 0 0 var(--gap40)
 }
 
-@media(max-width:540px)
+@media(max-width:1100px)
+{
+    #search-form
+    {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media(max-width:776px)
 {
     #search-form
     {
@@ -110,4 +118,91 @@ search-popup result
     position: relative;
     z-index: 2;
     background: var(--body);
+}
+
+/*
+форма пошуку, яка розтягується і затіняє body
+*/
+
+/* обгортка для позиціонування  */
+#form-modal-wrapper
+{
+    position: relative;
+}
+
+#form-modal
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: calc(100% - 340px);
+    height: 150px;
+}
+
+@media(max-width:1100px)
+{
+    #form-modal
+    {
+        width: 100%;
+    }
+}
+
+#form-modal.active
+{
+    width: 100%;
+    background: var(--form-bg);
+    height: 300px;
+    padding: 80px 100px;
+    z-index: 5;
+}
+
+@media(max-width:540px)
+{
+    #form-modal.active
+    {
+        width: 107.5%;
+        padding: 10px 20px;
+        left: -2.5%;
+        height: 200px;
+    }
+}
+
+/* розпорка */
+.form-modal
+{
+    height: 150px;
+}
+
+@media(max-width:776px)
+{
+    .form-modal
+    {
+        height: 175px;
+    }
+}
+
+#form-close
+{
+    width: 24px;
+    height: 24px;
+    background-image: url('data:image/svg+xml,%3Csvg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"%3E%3Cpath d="M2 2L21.9996 21.9996" stroke="%23CCD0D9" stroke-width="3" stroke-linecap="round"/%3E%3Cpath d="M2 22L21.9996 2.00037" stroke="%23CCD0D9" stroke-width="3" stroke-linecap="round"/%3E%3C/svg%3E');
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    display: none;
+    cursor: pointer;
+}
+
+@media(max-width:540px)
+{
+    #form-close
+    {
+        top: 15px;
+        right: 15px;
+    }
+}
+
+body.transparent #form-close
+{
+    display: block;
 }
