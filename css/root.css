@@ -266,6 +266,11 @@ body.transparent #content
 }
 
 /* add news */
+#add-news
+{
+    margin: var(--gap20) 0;
+}
+
 #add-news form
 {
     display: grid;
