@@ -12,8 +12,9 @@ const body = document.body
 	})	
 }
 
-{
-	// modal search form
+// modal search form
+if(document.querySelector('#form-modal')){
+
 	const formModal = document.querySelector('#form-modal')
 	const formModalInput = formModal.querySelector('input[type="search"]')
 

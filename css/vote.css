@@ -8,7 +8,7 @@ todo: checkbox, radio
     padding: var(--gap40) var(--gap100);
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     .vote
     {
@@ -51,7 +51,7 @@ result
     display: block;
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     .vote-result
     {
@@ -73,7 +73,7 @@ result
     align-items: center;
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     .vote-result li
     {
@@ -95,7 +95,7 @@ result
     grid-area: vote-p;
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     .vote-result p
     {
@@ -146,7 +146,7 @@ result
     font-weight: 700;
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     .vote-result label strong 
     {

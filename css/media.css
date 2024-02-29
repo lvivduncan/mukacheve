@@ -56,7 +56,7 @@ media tabs && video
     font-family: Roboto;
     font-size: 36px;
     font-weight: 700;
-    line-height: 40px;
+    line-height: var(--gap40);
     color: var(--body);
     margin: 0 0 var(--gap10)
 }

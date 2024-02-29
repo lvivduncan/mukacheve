@@ -12,7 +12,7 @@ short preview (image + title)
     margin: 0 0 var(--gap20)
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     .short
     {
@@ -62,7 +62,7 @@ short preview (image + title)
     }
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
 .short-three-column
     {

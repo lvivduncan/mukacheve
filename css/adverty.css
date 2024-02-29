@@ -5,7 +5,7 @@
     gap: var(--gap20);
     width: 100%;
 }
-
+/* 
 #adverty-search [type="search"]
 {
     width: 100%;
@@ -42,7 +42,7 @@
     text-transform: uppercase;
     height: 50px;
 }
-
+ */
 #adverty p 
 {
     margin: var(--gap20) 0;
@@ -71,7 +71,7 @@
 #adverty-filter [type="submit"]
 {
     background: var(--footer);
-    color: var(--body);
+    /* color: var(--body);
     cursor: pointer;
     border: none;
 
@@ -82,7 +82,12 @@
     letter-spacing: -0.015em;
     text-align: center;
     text-transform: uppercase;
-    height: 50px;
+    height: 50px; */
+}
+
+#adverty-filter [type="submit"]:hover 
+{
+  background: var(--media);
 }
 
 #adverty-filter label

@@ -18,7 +18,7 @@
 {
     display: grid;
     align-items: center;
-    gap: var(--gap40);
+    gap: var(--gap20) var(--gap30);
     grid-template-columns: repeat(3,1fr);
     grid-template-areas: 
         'registration-user registration-password registration-re-password'
@@ -38,7 +38,6 @@
             'registration-re-password'
             'registration-mail'
             'registration-checkbox'
-            /* 'registration-checkbox' */
             'registration-name'
             'registration-surname'
             'registration-dad'
@@ -72,10 +71,9 @@
 {
     grid-area: registration-checkbox;
 }
-
+/* 
 #registration-checkbox label
 {
-    /* display: block; */
     position: relative;
     padding-left: 35px;
     cursor: pointer;
@@ -132,7 +130,7 @@
     border-width: 0 3px 3px 0;
     transform: rotate(45deg);
 }
-
+ */
 #registration-name
 {
     grid-area: registration-name;
@@ -177,7 +175,7 @@
         text-align: left;
     }
 }
-
+/* 
 #registration [type="text"],
 #registration [type="password"],
 #registration [type="email"]
@@ -218,7 +216,7 @@
 {
     border-color: var(--media);
 }
-
+ */
 /**/
 #login
 {
@@ -228,7 +226,7 @@
     padding: var(--gap40);
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     #login
     {
@@ -251,7 +249,7 @@
 {
     margin: 0 0 var(--gap20);
 }
-
+/* 
 #login [type="text"],
 #login [type="password"]
 {
@@ -273,7 +271,7 @@
 {
     border-color: var(--media)
 }
-
+ */
 #login-recovery
 {
     font-family: Roboto;

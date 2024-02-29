@@ -51,8 +51,8 @@ body,html
 
 body
 {
-    display: flex;
-    flex-flow: column;
+    /* display: flex; */
+    /* flex-flow: column; */
     /* justify-content: space-between; */
 }
 
@@ -159,12 +159,33 @@ picture source
 }
 
 /* check all variants */
-@media(max-width: 1340px)
+@media(max-width:1340px)
 {
     .wrapper
     {
         width: 95%;
     }
+}
+
+/* довелося присрати, через модальну форму відправки новини */
+#content
+{
+    width: 1320px;
+    margin: 0 auto;
+    min-height: 620px;
+}
+
+@media(max-width:1340px)
+{
+    #content
+    {
+        width: 95%;
+    }
+}
+
+body.transparent #content
+{
+    position: relative;
 }
 
 .button
@@ -176,8 +197,8 @@ picture source
 .button a
 {
     width: 150px;
-    height: 40px;
-    line-height: 40px;
+    height: var(--gap40);
+    line-height: var(--gap40);
 
     border: 1px solid var(--border-button);
 
@@ -242,6 +263,73 @@ picture source
     position: relative;
     top: 2px;
     left: -3px;
+}
+
+/* add news */
+#add-news form
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: var(--gap20) var(--gap30);
+    grid-template-areas: 
+        'add-news-name add-news-surname add-news-dad'
+        'add-news-email add-news-checkbox add-news-checkbox'
+        'add-news-comment add-news-comment add-news-comment'
+        'add-news-code add-news-captcha add-news-submit';
+}
+
+#add-news-name
+{
+    grid-area: add-news-name;
+}
+
+#add-news-surname
+{
+    grid-area: add-news-surname;
+}
+
+#add-news-dad
+{
+    grid-area: add-news-dad;
+}
+
+#add-news-email
+{
+    grid-area: add-news-email;
+}
+
+#add-news-checkbox
+{
+    grid-area: add-news-checkbox;
+    align-self: center;
+}
+
+#add-news-comment
+{
+    grid-area: add-news-comment;
+}
+
+#add-news-code
+{
+    grid-area: add-news-code;
+    align-self: center;
+}
+
+#add-news-captcha
+{
+    grid-area: add-news-captcha;
+}
+
+#add-news-submit
+{
+    grid-area: add-news-submit;
+    justify-self: right;
+    align-self: center;
+}
+
+#add-news p 
+{
+    margin: 0 0 var(--gap20);
 }
 
 
@@ -329,7 +417,7 @@ picture source
         'menu-nav menu-nav menu-social';
 }
 
-@media(max-width: 1340px)
+@media(max-width:1340px)
 {
     #menu 
     {
@@ -341,7 +429,7 @@ picture source
 }
 
 /* add element menu button! */
-@media(max-width: 1340px)
+@media(max-width:1340px)
 {
     #header .wrapper
     {
@@ -385,7 +473,7 @@ picture source
     grid-area: menu-time;
 }
 
-@media(max-width: 1340px)
+@media(max-width:1340px)
 {
     #menu time 
     {
@@ -401,7 +489,7 @@ picture source
     justify-content: flex-end;
 }
 
-@media(max-width: 1340px)
+@media(max-width:1340px)
 {
     #feedback
     {
@@ -409,7 +497,7 @@ picture source
     }    
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     #feedback
     {
@@ -423,7 +511,7 @@ picture source
     margin-left: var(--gap20);
 }
 
-@media(max-width: 1340px)
+@media(max-width:1340px)
 {
     #feedback li
     {
@@ -443,7 +531,7 @@ picture source
     cursor: pointer;
 }
 
-@media(max-width: 1340px)
+@media(max-width:1340px)
 {
     #feedback a,
     #feedback span
@@ -452,7 +540,7 @@ picture source
     }
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     #feedback a,
     #feedback span
@@ -514,7 +602,7 @@ picture source
     margin-right: var(--gap30);
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     #primary li 
     {
@@ -551,7 +639,7 @@ picture source
     color: var(--media);
 }
 
-@media(max-width: 1340px)
+@media(max-width:1340px)
 {
     #primary li a,
     #primary li a:hover,
@@ -573,7 +661,7 @@ picture source
     margin-right: var(--gap20);
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     #secondary li 
     {
@@ -591,7 +679,7 @@ picture source
     text-decoration: none;
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     #secondary li a
     {
@@ -605,7 +693,7 @@ picture source
     text-decoration: underline;
 }
 
-@media(max-width: 1340px)
+@media(max-width:1340px)
 {
     #secondary li a,
     #secondary li a:hover 
@@ -622,7 +710,7 @@ picture source
     justify-content: flex-end;
 }
 
-@media(max-width: 1340px)
+@media(max-width:1340px)
 {
     #social 
     {
@@ -674,7 +762,7 @@ picture source
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' height='16' width='16' viewBox='0 0 512 512' fill='%232D2E70'%3E%3Cpath d='M416 208c0 45.9-14.9 88.3-40 122.7L502.6 457.4c12.5 12.5 12.5 32.8 0 45.3s-32.8 12.5-45.3 0L330.7 376c-34.4 25.2-76.8 40-122.7 40C93.1 416 0 322.9 0 208S93.1 0 208 0S416 93.1 416 208zM208 352a144 144 0 1 0 0-288 144 144 0 1 0 0 288z'/%3E%3C/svg%3E");
 }
 
-@media(max-width: 1340px)
+@media(max-width:1340px)
 {
 
     .facebook
@@ -708,7 +796,7 @@ main h1
     margin: 0 0 var(--gap20)
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     main h1
     {
@@ -748,7 +836,7 @@ main h1
     line-height: 30px;
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     #main-content h2 
     {
@@ -862,7 +950,7 @@ main a:hover
     gap: var(--gap20);
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     .description
     {
@@ -884,7 +972,7 @@ main a:hover
     gap: var(--gap20)
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     .description li 
     {
@@ -898,7 +986,7 @@ main a:hover
     text-decoration: underline;
 }
 
-@media(max-width:540px)
+@media(max-width:5var(--gap40))
 {
     .description a
     {
@@ -944,19 +1032,19 @@ main a:hover
     font-weight: 700;
 }
 
-
 #footer
 {
     background: var(--footer);
     min-height: 300px;
     padding: 70px 0 var(--gap20);
     color: var(--body);
+    /* margin-top: auto;  */
 }
 
 #footer .wrapper 
 {
     display: grid;
-    grid-template-columns: 300px 640px 1fr;
+    grid-template-columns: 300px 6var(--gap40) 1fr;
     gap: var(--gap40);
     align-items: start;
 
@@ -966,7 +1054,7 @@ main a:hover
     line-height: 20px;
 }
 
-@media(max-width: 1340px)
+@media(max-width:1340px)
 {
     #footer .wrapper 
     {
@@ -988,11 +1076,6 @@ main a:hover
 #copyright a:hover
 {
     text-decoration: none;
-}
-
-#footer 
-{
-    margin-top: auto;
 }
 
 #footer ul,
