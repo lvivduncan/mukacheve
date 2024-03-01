@@ -17,7 +17,7 @@ label.mark
     color: var(--body);
 }
 
-@media(max-width:5var(--gap40))
+@media(max-width:540px)
 {
     .vote label.mark
     {
@@ -44,6 +44,7 @@ label.mark .checkbox
     height: 25px;
     width: 25px;
     border: 1px solid var(--input);
+    background: #fff;
 }
 
 label.mark .radio

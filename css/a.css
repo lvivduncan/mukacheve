@@ -1,4 +1,6 @@
-/* adverty */
+/* 
+тимчасовий файлик з банерами
+*/
 
 /* 1 baner (top baner) не масштабується */
 #a1
@@ -6,6 +8,7 @@
     text-align: center;
     margin: 2px 0;
     overflow: hidden;
+    height: 90px;
 }
 
 #a1 img 

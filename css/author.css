@@ -11,7 +11,7 @@
     margin: 0 0 var(--gap40);
 }
 
-@media(max-width:5var(--gap40))
+@media(max-width:540px)
 {
     #author-description
     {
@@ -28,7 +28,7 @@
     width: 120px;
 }
 
-@media(max-width:5var(--gap40))
+@media(max-width:540px)
 {
     #author-description .picture
     {

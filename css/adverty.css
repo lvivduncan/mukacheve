@@ -1,9 +1,25 @@
+@media(max-width:540px)
+{
+  #adverty [type="submit"]
+  {
+    width: 100%;
+  }
+}
+
 #adverty-search
 {
     display: grid;
     grid-template-columns: 1fr 200px;
     gap: var(--gap20);
     width: 100%;
+}
+
+@media(max-width:540px)
+{
+  #adverty-search
+  {
+    grid-template-columns: 1fr;
+  }
 }
 /* 
 #adverty-search [type="search"]
@@ -68,6 +84,14 @@
     margin: 0 0 var(--gap40)
 }
 
+@media(max-width:776px)
+{
+  #adverty-filter
+  {
+    grid-template-columns: 1fr;
+  }
+}
+
 #adverty-filter [type="submit"]
 {
     background: var(--footer);
@@ -95,6 +119,15 @@
     display: flex;
     align-items: center;
     gap: var(--gap20)
+}
+
+@media(max-width:776px)
+{
+  #adverty-filter label
+  {
+    display: grid;
+    grid-template-columns: 90px 1fr;
+  }
 }
 
 select

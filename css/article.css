@@ -15,6 +15,7 @@ grid-layout for article
         'article-3 article-4'
         'article-5 article-5'
         'article-6 article-6';
+    position: relative;
 }
 
 @media(max-width:1340px)

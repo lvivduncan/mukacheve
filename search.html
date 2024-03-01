@@ -135,7 +135,7 @@
 							<a href="#"><span class="youtube"></span></a>
 						</li>
 						<li>
-							<a href="#"><span class="search"></span></a>
+							<a href="/search.html"><span class="search"></span></a>
 						</li>
 					</ul>
 				</div>
@@ -145,85 +145,133 @@
 			</div>
 		</header>
 
-		<div class="wrapper">
-			<div class="main-sidebar" id="form-modal-wrapper">
+		<div id="content">
 
-				<div>
-
-					<div id="form-modal">
-						<div class="title">Пошук</div>
-
-						<form id="search-form">
-							<input type="search" placeholder="Шукати" />
-							<input type="submit" value="Шукати" />
-						</form>
-						
-						<div id="form-close"></div>
+			<div id="add-news">
+	
+				<div class="title">повідомити новину</div>
+				<p>Заповніть наступні поля щоб повідомити новину</p>
+	
+				<form>
+					<div id="add-news-name">
+						<input type="text" name="" placeholder="Ім'я">
 					</div>
-					 <!-- id="form-modal" -->
-
-					 <div class="form-modal"></div>
-
-					<div id="a2">
-						<a href="#"><img src="temp/a1.jpg" alt="" /></a>
+					<div id="add-news-surname">
+						<input type="text" name="" placeholder="Прізвище">
 					</div>
+					<div id="add-news-dad">
+						<input type="text" name="" placeholder="По батькові">
+					</div>
+					<div id="add-news-email">
+						<input type="email" name="" placeholder="email">
+					</div>
+					<div id="add-news-checkbox">
+						<label class="mark">
+							Показувати електронну пошту
+							<input type="checkbox">
+							<span class="checkbox"></span>
+						</label>
+					</div>
+					<div id="add-news-comment">
+						<textarea></textarea>
+					</div>
+					<div id="add-news-code">Код перевірки</div>
+					<div id="add-news-captcha">
+						<img src="temp/captcha.jpg" alt="">
+					</div>
+					<div id="add-news-submit">
+						<button type="submit">
+							Відправити
+						</button>
+					</div>
+				</form>
+	
+				<div id="form-close"></div>
+	
+			</div>
+			<!-- id="add-news"  -->
+	
+			<div class="wrapper">
+				<div class="main-sidebar" id="form-modal-wrapper">
 
-					<div id="search-result">
-						<div class="title">Результат пошуку</div>
+					<div>
 
-						<ul>
-							<li>
-								<a href="#"
-									>В Мукачеві виділили 2,6 млн грн допомоги
-									захисникам та родинам полеглих Героїв</a
-								>
-							</li>
-							<li>
-								<a href="#"
-									>Популярний на Закарпатті "лангош" став
-									офіційним гастрономічним символом
-									Угорщини</a
-								>
-							</li>
-							<li>
-								<a href="#"
-									>На Закарпатті критична нестача кількох груп
-									крові</a
-								>
-							</li>
-							<li>
-								<a href="#"
-									>Пандуси, поручні, звукові інформатори: у
-									Мукачеві затвердили програму
-									безбар'єрності</a
-								>
-							</li>
-							<li>
-								<a href="#"
-									>Ще 810 окупантів було ліквідовано
-									українськими військовими</a
-								>
-							</li>
-						</ul>
+						<div id="form-modal">
+							<div class="title">Пошук</div>
 
-						<div class="pagination">
+							<form id="search-form">
+								<input type="search" placeholder="Шукати" />
+								<input type="submit" value="Шукати" />
+							</form>
+							
+							<div id="form-close"><!-- розпорка --></div>
+						</div>
+						<!-- id="form-modal" -->
+
+						<div class="form-modal"></div>
+
+						<div id="a2">
+							<a href="#"><img src="temp/a1.jpg" alt="" /></a>
+						</div>
+
+						<div id="search-result">
+							<div class="title">Результат пошуку</div>
+
 							<ul>
-								<li><a href="#" class="active">1</a></li>
-								<li><a href="#">2</a></li>
-								<li><a href="#">3</a></li>
-								<li><a href="#">4</a></li>
+								<li>
+									<a href="#"
+										>В Мукачеві виділили 2,6 млн грн допомоги
+										захисникам та родинам полеглих Героїв</a
+									>
+								</li>
+								<li>
+									<a href="#"
+										>Популярний на Закарпатті "лангош" став
+										офіційним гастрономічним символом
+										Угорщини</a
+									>
+								</li>
+								<li>
+									<a href="#"
+										>На Закарпатті критична нестача кількох груп
+										крові</a
+									>
+								</li>
+								<li>
+									<a href="#"
+										>Пандуси, поручні, звукові інформатори: у
+										Мукачеві затвердили програму
+										безбар'єрності</a
+									>
+								</li>
+								<li>
+									<a href="#"
+										>Ще 810 окупантів було ліквідовано
+										українськими військовими</a
+									>
+								</li>
 							</ul>
+
+							<div class="pagination">
+								<ul>
+									<li><a href="#" class="active">1</a></li>
+									<li><a href="#">2</a></li>
+									<li><a href="#">3</a></li>
+									<li><a href="#">4</a></li>
+								</ul>
+							</div>
 						</div>
 					</div>
-				</div>
-				<aside>
-					<div id="a3">
-						<a href="#">
-							<img src="temp/a3.jpg" alt="" />
-						</a>
-					</div>
-				</aside>
+					<aside>
+						<div id="a3">
+							<a href="#">
+								<img src="temp/a3.jpg" alt="" />
+							</a>
+						</div>
+					</aside>
+				</div>				
 			</div>
+
 		</div>
 
 		<footer id="footer">

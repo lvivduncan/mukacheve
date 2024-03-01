@@ -135,7 +135,7 @@
 							<a href="#"><span class="youtube"></span></a>
 						</li>
 						<li>
-							<a href="#"><span class="search"></span></a>
+							<a href="/search.html"><span class="search"></span></a>
 						</li>
 					</ul>
 				</div>
@@ -145,469 +145,517 @@
 			</div>
 		</header>
 
-		<div class="wrapper">
-			<div class="main-sidebar">
-				<div>
-					<main>
-						<div class="title">Опитування</div>
+		<div id="content">
 
-						<h1>Чи треба заблокувати Telegram в Україні?</h1>
+			<div id="add-news">
 
-						<div class="service">
-							<time>23.10.2023 | 20:02</time>
-							<div class="view">123</div>
-							<div class="comment">110</div>
-						</div>
+				<div class="title">повідомити новину</div>
+				<p>Заповніть наступні поля щоб повідомити новину</p>
+	
+				<form>
+					<div id="add-news-name">
+						<input type="text" name="" placeholder="Ім'я">
+					</div>
+					<div id="add-news-surname">
+						<input type="text" name="" placeholder="Прізвище">
+					</div>
+					<div id="add-news-dad">
+						<input type="text" name="" placeholder="По батькові">
+					</div>
+					<div id="add-news-email">
+						<input type="email" name="" placeholder="email">
+					</div>
+					<div id="add-news-checkbox">
+						<label class="mark">
+							Показувати електронну пошту
+							<input type="checkbox">
+							<span class="checkbox"></span>
+						</label>
+					</div>
+					<div id="add-news-comment">
+						<textarea></textarea>
+					</div>
+					<div id="add-news-code">Код перевірки</div>
+					<div id="add-news-captcha">
+						<img src="temp/captcha.jpg" alt="">
+					</div>
+					<div id="add-news-submit">
+						<button type="submit">
+							Відправити
+						</button>
+					</div>
+				</form>
+	
+				<div id="form-close"></div>
+	
+			</div>
+			<!-- id="add-news"  -->
 
-						<div class="picture">
-							<picture>
-								<img
-									src="temp/article-3.jpg"
-									alt="Чи треба заблокувати Telegram в Україні?"
-								/>
-							</picture>
-						</div>
+			<div class="wrapper">
+				<div class="main-sidebar">
+					<div>
+						<main>
+							<div class="title">Опитування</div>
 
-						<div id="a6">
+							<h1>Чи треба заблокувати Telegram в Україні?</h1>
+
+							<div class="service">
+								<time>23.10.2023 | 20:02</time>
+								<div class="view">123</div>
+								<div class="comment">110</div>
+							</div>
+
+							<div class="picture">
+								<picture>
+									<img
+										src="temp/article-3.jpg"
+										alt="Чи треба заблокувати Telegram в Україні?"
+									/>
+								</picture>
+							</div>
+
+							<div id="a6">
+								<a href="#"><img src="temp/a1.jpg" alt="" /></a>
+							</div>
+
+							<!-- <div id="main-content"> -->
+							<div class="vote">
+								<form>
+									<label for="vote-1" class="mark">
+										<input
+											type="radio"
+											name="vote"
+											id="vote-1"
+										/>
+										Так. Треба блокувати, але лише окремі ворожі
+										і ватні канали<span class="radio"></span>
+									</label>
+									<label for="vote-2" class="mark">
+										<input
+											type="radio"
+											name="vote"
+											id="vote-2"
+										/>
+										Так. Треба блокувати повністю: це ворожий
+										месенджер, багато фейків<span
+											class="radio"
+										></span>
+									</label>
+									<label for="vote-3" class="mark">
+										<input
+											type="radio"
+											name="vote"
+											id="vote-3"
+										/>
+										Ні. Це обмеження свободи слова
+										<span class="radio"></span>
+									</label>
+									<label for="vote-4" class="mark">
+										<input
+											type="radio"
+											name="vote"
+											id="vote-4"
+										/>
+										Я ще не визначився з цього питання
+										<span class="radio"></span>
+									</label>
+
+									<div class="text-center">
+										<input type="submit" value="Відповісти" />
+									</div>
+								</form>
+							</div>
+							<!-- </div> -->
+						</main>
+
+						<div id="a2">
 							<a href="#"><img src="temp/a1.jpg" alt="" /></a>
 						</div>
 
-						<!-- <div id="main-content"> -->
-						<div class="vote">
+						<div id="comments">
+							<h1>Додати коментар</h1>
 							<form>
-								<label for="vote-1" class="mark">
+								<div class="form-top">
 									<input
-										type="radio"
-										name="vote"
-										id="vote-1"
+										type="text"
+										name=""
+										id=""
+										placeholder="Ваше ім'я"
 									/>
-									Так. Треба блокувати, але лише окремі ворожі
-									і ватні канали<span class="radio"></span>
-								</label>
-								<label for="vote-2" class="mark">
-									<input
-										type="radio"
-										name="vote"
-										id="vote-2"
-									/>
-									Так. Треба блокувати повністю: це ворожий
-									месенджер, багато фейків<span
-										class="radio"
-									></span>
-								</label>
-								<label for="vote-3" class="mark">
-									<input
-										type="radio"
-										name="vote"
-										id="vote-3"
-									/>
-									Ні. Це обмеження свободи слова
-									<span class="radio"></span>
-								</label>
-								<label for="vote-4" class="mark">
-									<input
-										type="radio"
-										name="vote"
-										id="vote-4"
-									/>
-									Я ще не визначився з цього питання
-									<span class="radio"></span>
-								</label>
-
-								<div class="text-center">
-									<input type="submit" value="Відповісти" />
+									<span class="form-or">aбо</span>
+									<span class="form-enter">Авторизуйтеся</span>
+									<span class="form-characters"
+										>Залишилося <span>1000</span> символів</span
+									>
+								</div>
+								<textarea placeholder="Ваш коментар"></textarea>
+								<div class="form-bottom">
+									<img src="temp/captcha.jpg" alt="" />
+									<input type="submit" value="Додати коментар" />
 								</div>
 							</form>
+
+							<h2>Коментарі <span>4</span></h2>
+
+							<ul>
+								<li>
+									<div class="comment-head">
+										<div class="comment-head-avatar">
+											<span>ДА</span>
+										</div>
+										<div class="comment-head-user">
+											<a href="#"
+												>Данило Андрійович Микитюк</a
+											>
+
+											<span>11 хвилин тому</span>
+										</div>
+									</div>
+									<div class="comment-body">
+										<p>
+											Omnis consequatur dolorem maxime illum.
+											Ut velit natus ut sit accusamus
+											voluptatibus. Occaecati harum harum
+											asperiores dolores enim voluptas. Non
+											corporis vitae ad sunt voluptas omnis
+											quae. Beatae dolores et consequatur
+											voluptas sunt fugit rerum aut. Enim quis
+											dolores non enim perspiciatis unde.
+											Consequatur illo aliquid nemo
+											consequatur. Sit maiores accusantium
+											cupiditate expedita. Consectetur non
+											distinctio consequatur a dolorem eaque.
+											Nulla sint dolores aspernatur qui omnis
+											facilis.
+										</p>
+									</div>
+									<div class="comment-footer">
+										<p>
+											Переглянути відповіді <span>(1)</span>
+										</p>
+										<p>Відповісти</p>
+									</div>
+
+									<form>
+										<div class="form-top">
+											<p></p>
+											<span class="form-characters"
+												>Залишилося
+												<span>1000</span> символів</span
+											>
+										</div>
+										<textarea
+											placeholder="Відповідь"
+										></textarea>
+										<div class="form-bottom">
+											<img src="temp/captcha.jpg" alt="" />
+											<input
+												type="submit"
+												value="Додати коментар"
+											/>
+										</div>
+									</form>
+								</li>
+								<li>
+									<div class="comment-head">
+										<div class="comment-head-avatar">
+											<span>ВВ</span>
+										</div>
+										<div class="comment-head-user">
+											<a href="#"
+												>Валерія Валентинівна Василенко</a
+											>
+
+											<span>16 хвилин тому</span>
+										</div>
+									</div>
+									<div class="comment-body">
+										<p>
+											Omnis consequatur dolorem maxime illum.
+											Ut velit natus ut sit accusamus
+											voluptatibus. Occaecati harum harum
+											asperiores dolores enim voluptas. Non
+											corporis vitae ad sunt voluptas omnis
+											quae. Beatae dolores et consequatur
+											voluptas sunt fugit rerum aut. Enim quis
+											dolores non enim perspiciatis unde.
+											Consequatur illo aliquid nemo
+											consequatur. Sit maiores accusantium
+											cupiditate expedita. Consectetur non
+											distinctio consequatur a dolorem eaque.
+											Nulla sint dolores aspernatur qui omnis
+											facilis.
+										</p>
+									</div>
+									<div class="comment-footer">
+										<p>
+											Переглянути відповіді <span>(1)</span>
+										</p>
+										<p>Відповісти</p>
+									</div>
+									<ul>
+										<li>
+											<div class="comment-head">
+												<div class="comment-head-avatar">
+													<span>СП</span>
+												</div>
+												<div class="comment-head-user">
+													<a href="#"
+														>Станіслав Петрович
+														Сергієнко</a
+													>
+
+													<span>11 хвилин тому</span>
+												</div>
+											</div>
+											<div class="comment-body">
+												<p>
+													Omnis consequatur dolorem maxime
+													illum. Ut velit natus ut sit
+													accusamus voluptatibus.
+													Occaecati harum harum asperiores
+													dolores enim voluptas. Non
+													corporis vitae ad sunt voluptas
+													omnis quae. Beatae dolores et
+													consequatur voluptas sunt fugit
+													rerum aut. Enim quis dolores non
+													enim perspiciatis unde.
+													Consequatur illo aliquid nemo
+													consequatur. Sit maiores
+													accusantium cupiditate expedita.
+													Consectetur non distinctio
+													consequatur a dolorem eaque.
+													Nulla sint dolores aspernatur
+													qui omnis facilis.
+												</p>
+											</div>
+											<div class="comment-footer">
+												<p>
+													Переглянути відповіді
+													<span>(1)</span>
+												</p>
+												<p>Відповісти</p>
+											</div>
+											<ul>
+												<li>
+													<div class="comment-head">
+														<div
+															class="comment-head-avatar"
+														>
+															<span>СП</span>
+														</div>
+														<div
+															class="comment-head-user"
+														>
+															<a href="#"
+																>Валерія
+																Валентинівна
+																Василенко</a
+															>
+
+															<span
+																>11 хвилин
+																тому</span
+															>
+														</div>
+													</div>
+													<div class="comment-body">
+														<p>
+															Omnis consequatur
+															dolorem maxime illum. Ut
+															velit natus ut sit
+															accusamus voluptatibus.
+															Occaecati harum harum
+															asperiores dolores enim
+															voluptas. Non corporis
+															vitae ad sunt voluptas
+															omnis quae. Beatae
+															dolores et consequatur
+															voluptas sunt fugit
+															rerum aut. Enim quis
+															dolores non enim
+															perspiciatis unde.
+															Consequatur illo aliquid
+															nemo consequatur. Sit
+															maiores accusantium
+															cupiditate expedita.
+															Consectetur non
+															distinctio consequatur a
+															dolorem eaque. Nulla
+															sint dolores aspernatur
+															qui omnis facilis.
+														</p>
+													</div>
+													<div class="comment-footer">
+														<p>
+															Переглянути відповіді
+															<span>(1)</span>
+														</p>
+														<p>Відповісти</p>
+													</div>
+												</li>
+											</ul>
+										</li>
+									</ul>
+								</li>
+								<li>
+									<div class="comment-head">
+										<div class="comment-head-avatar">
+											<span>СП</span>
+										</div>
+										<div class="comment-head-user">
+											<a href="#"
+												>Станіслав Петрович Сергієнко</a
+											>
+
+											<span>11 хвилин тому</span>
+										</div>
+									</div>
+									<div class="comment-body">
+										<p>
+											Omnis consequatur dolorem maxime illum.
+											Ut velit natus ut sit accusamus
+											voluptatibus. Occaecati harum harum
+											asperiores dolores enim voluptas. Non
+											corporis vitae ad sunt voluptas omnis
+											quae. Beatae dolores et consequatur
+											voluptas sunt fugit rerum aut. Enim quis
+											dolores non enim perspiciatis unde.
+											Consequatur illo aliquid nemo
+											consequatur. Sit maiores accusantium
+											cupiditate expedita. Consectetur non
+											distinctio consequatur a dolorem eaque.
+											Nulla sint dolores aspernatur qui omnis
+											facilis.
+										</p>
+									</div>
+									<div class="comment-footer">
+										<p>
+											Переглянути відповіді <span>(1)</span>
+										</p>
+										<p>Відповісти</p>
+									</div>
+								</li>
+							</ul>
 						</div>
-						<!-- </div> -->
-					</main>
 
-					<div id="a2">
-						<a href="#"><img src="temp/a1.jpg" alt="" /></a>
+						<div id="a3">
+							<a href="#"><img src="temp/a1.jpg" alt="" /></a>
+						</div>
 					</div>
 
-					<div id="comments">
-						<h1>Додати коментар</h1>
-						<form>
-							<div class="form-top">
-								<input
-									type="text"
-									name=""
-									id=""
-									placeholder="Ваше ім'я"
-								/>
-								<span class="form-or">aбо</span>
-								<span class="form-enter">Авторизуйтеся</span>
-								<span class="form-characters"
-									>Залишилося <span>1000</span> символів</span
-								>
-							</div>
-							<textarea placeholder="Ваш коментар"></textarea>
-							<div class="form-bottom">
-								<img src="temp/captcha.jpg" alt="" />
-								<input type="submit" value="Додати коментар" />
-							</div>
-						</form>
-
-						<h2>Коментарі <span>4</span></h2>
-
-						<ul>
-							<li>
-								<div class="comment-head">
-									<div class="comment-head-avatar">
-										<span>ДА</span>
-									</div>
-									<div class="comment-head-user">
-										<a href="#"
-											>Данило Андрійович Микитюк</a
-										>
-
-										<span>11 хвилин тому</span>
-									</div>
+					<aside>
+						<div class="title">Інші опитування</div>
+						<div class="notices">
+							<article>
+								<div class="picture">
+									<picture>
+										<img src="temp/small-1.jpg" alt="" />
+									</picture>
 								</div>
-								<div class="comment-body">
-									<p>
-										Omnis consequatur dolorem maxime illum.
-										Ut velit natus ut sit accusamus
-										voluptatibus. Occaecati harum harum
-										asperiores dolores enim voluptas. Non
-										corporis vitae ad sunt voluptas omnis
-										quae. Beatae dolores et consequatur
-										voluptas sunt fugit rerum aut. Enim quis
-										dolores non enim perspiciatis unde.
-										Consequatur illo aliquid nemo
-										consequatur. Sit maiores accusantium
-										cupiditate expedita. Consectetur non
-										distinctio consequatur a dolorem eaque.
-										Nulla sint dolores aspernatur qui omnis
-										facilis.
-									</p>
+								<h1>
+									<a href="#"
+										>На Закарпатті критична нестача кількох груп
+										крові
+									</a>
+								</h1>
+							</article>
+							<article>
+								<div class="picture">
+									<picture>
+										<img src="temp/small-2.jpg" alt="" />
+									</picture>
 								</div>
-								<div class="comment-footer">
-									<p>
-										Переглянути відповіді <span>(1)</span>
-									</p>
-									<p>Відповісти</p>
+								<h1>
+									<a href="#"
+										>Пандуси, поручні, звукові інформатори</a
+									>
+								</h1>
+							</article>
+							<article>
+								<div class="picture">
+									<picture>
+										<img src="temp/small-3.jpg" alt="" />
+									</picture>
 								</div>
-
-								<form>
-									<div class="form-top">
-										<p></p>
-										<span class="form-characters"
-											>Залишилося
-											<span>1000</span> символів</span
-										>
-									</div>
-									<textarea
-										placeholder="Відповідь"
-									></textarea>
-									<div class="form-bottom">
-										<img src="temp/captcha.jpg" alt="" />
-										<input
-											type="submit"
-											value="Додати коментар"
-										/>
-									</div>
-								</form>
-							</li>
-							<li>
-								<div class="comment-head">
-									<div class="comment-head-avatar">
-										<span>ВВ</span>
-									</div>
-									<div class="comment-head-user">
-										<a href="#"
-											>Валерія Валентинівна Василенко</a
-										>
-
-										<span>16 хвилин тому</span>
-									</div>
+								<h1>
+									<a href="#"
+										>Ще 810 окупантів було ліквідовано
+										українськими
+									</a>
+								</h1>
+							</article>
+							<article>
+								<div class="picture">
+									<picture>
+										<img src="temp/small-4.jpg" alt="" />
+									</picture>
 								</div>
-								<div class="comment-body">
-									<p>
-										Omnis consequatur dolorem maxime illum.
-										Ut velit natus ut sit accusamus
-										voluptatibus. Occaecati harum harum
-										asperiores dolores enim voluptas. Non
-										corporis vitae ad sunt voluptas omnis
-										quae. Beatae dolores et consequatur
-										voluptas sunt fugit rerum aut. Enim quis
-										dolores non enim perspiciatis unde.
-										Consequatur illo aliquid nemo
-										consequatur. Sit maiores accusantium
-										cupiditate expedita. Consectetur non
-										distinctio consequatur a dolorem eaque.
-										Nulla sint dolores aspernatur qui omnis
-										facilis.
-									</p>
+								<h1>
+									<a href="#"
+										>В Мукачеві виділили 2,6 млн грн допомоги
+									</a>
+								</h1>
+							</article>
+							<article>
+								<div class="picture">
+									<picture>
+										<img src="temp/small-1.jpg" alt="" />
+									</picture>
 								</div>
-								<div class="comment-footer">
-									<p>
-										Переглянути відповіді <span>(1)</span>
-									</p>
-									<p>Відповісти</p>
+								<h1>
+									<a href="#">На Закарпатті</a>
+								</h1>
+							</article>
+							<article>
+								<div class="picture">
+									<picture>
+										<img src="temp/small-2.jpg" alt="" />
+									</picture>
 								</div>
-								<ul>
-									<li>
-										<div class="comment-head">
-											<div class="comment-head-avatar">
-												<span>СП</span>
-											</div>
-											<div class="comment-head-user">
-												<a href="#"
-													>Станіслав Петрович
-													Сергієнко</a
-												>
-
-												<span>11 хвилин тому</span>
-											</div>
-										</div>
-										<div class="comment-body">
-											<p>
-												Omnis consequatur dolorem maxime
-												illum. Ut velit natus ut sit
-												accusamus voluptatibus.
-												Occaecati harum harum asperiores
-												dolores enim voluptas. Non
-												corporis vitae ad sunt voluptas
-												omnis quae. Beatae dolores et
-												consequatur voluptas sunt fugit
-												rerum aut. Enim quis dolores non
-												enim perspiciatis unde.
-												Consequatur illo aliquid nemo
-												consequatur. Sit maiores
-												accusantium cupiditate expedita.
-												Consectetur non distinctio
-												consequatur a dolorem eaque.
-												Nulla sint dolores aspernatur
-												qui omnis facilis.
-											</p>
-										</div>
-										<div class="comment-footer">
-											<p>
-												Переглянути відповіді
-												<span>(1)</span>
-											</p>
-											<p>Відповісти</p>
-										</div>
-										<ul>
-											<li>
-												<div class="comment-head">
-													<div
-														class="comment-head-avatar"
-													>
-														<span>СП</span>
-													</div>
-													<div
-														class="comment-head-user"
-													>
-														<a href="#"
-															>Валерія
-															Валентинівна
-															Василенко</a
-														>
-
-														<span
-															>11 хвилин
-															тому</span
-														>
-													</div>
-												</div>
-												<div class="comment-body">
-													<p>
-														Omnis consequatur
-														dolorem maxime illum. Ut
-														velit natus ut sit
-														accusamus voluptatibus.
-														Occaecati harum harum
-														asperiores dolores enim
-														voluptas. Non corporis
-														vitae ad sunt voluptas
-														omnis quae. Beatae
-														dolores et consequatur
-														voluptas sunt fugit
-														rerum aut. Enim quis
-														dolores non enim
-														perspiciatis unde.
-														Consequatur illo aliquid
-														nemo consequatur. Sit
-														maiores accusantium
-														cupiditate expedita.
-														Consectetur non
-														distinctio consequatur a
-														dolorem eaque. Nulla
-														sint dolores aspernatur
-														qui omnis facilis.
-													</p>
-												</div>
-												<div class="comment-footer">
-													<p>
-														Переглянути відповіді
-														<span>(1)</span>
-													</p>
-													<p>Відповісти</p>
-												</div>
-											</li>
-										</ul>
-									</li>
-								</ul>
-							</li>
-							<li>
-								<div class="comment-head">
-									<div class="comment-head-avatar">
-										<span>СП</span>
-									</div>
-									<div class="comment-head-user">
-										<a href="#"
-											>Станіслав Петрович Сергієнко</a
-										>
-
-										<span>11 хвилин тому</span>
-									</div>
+								<h1>
+									<a href="#"
+										>Пандуси, поручні, звукові інформатори</a
+									>
+								</h1>
+							</article>
+							<article>
+								<div class="picture">
+									<picture>
+										<img src="temp/small-3.jpg" alt="" />
+									</picture>
 								</div>
-								<div class="comment-body">
-									<p>
-										Omnis consequatur dolorem maxime illum.
-										Ut velit natus ut sit accusamus
-										voluptatibus. Occaecati harum harum
-										asperiores dolores enim voluptas. Non
-										corporis vitae ad sunt voluptas omnis
-										quae. Beatae dolores et consequatur
-										voluptas sunt fugit rerum aut. Enim quis
-										dolores non enim perspiciatis unde.
-										Consequatur illo aliquid nemo
-										consequatur. Sit maiores accusantium
-										cupiditate expedita. Consectetur non
-										distinctio consequatur a dolorem eaque.
-										Nulla sint dolores aspernatur qui omnis
-										facilis.
-									</p>
+								<h1>
+									<a href="#"
+										>Ще 810 окупантів було ліквідовано
+										українськими
+									</a>
+								</h1>
+							</article>
+							<article>
+								<div class="picture">
+									<picture>
+										<img src="temp/small-4.jpg" alt="" />
+									</picture>
 								</div>
-								<div class="comment-footer">
-									<p>
-										Переглянути відповіді <span>(1)</span>
-									</p>
-									<p>Відповісти</p>
-								</div>
-							</li>
-						</ul>
-					</div>
+								<h1>
+									<a href="#"
+										>В Мукачеві виділили 2,6 млн грн допомоги
+									</a>
+								</h1>
+							</article>
+						</div>
+						<!-- class="notices" -->
 
-					<div id="a3">
-						<a href="#"><img src="temp/a1.jpg" alt="" /></a>
-					</div>
-				</div>
-
-				<aside>
-					<div class="title">Інші опитування</div>
-					<div class="notices">
-						<article>
-							<div class="picture">
-								<picture>
-									<img src="temp/small-1.jpg" alt="" />
-								</picture>
-							</div>
-							<h1>
-								<a href="#"
-									>На Закарпатті критична нестача кількох груп
-									крові
-								</a>
-							</h1>
-						</article>
-						<article>
-							<div class="picture">
-								<picture>
-									<img src="temp/small-2.jpg" alt="" />
-								</picture>
-							</div>
-							<h1>
-								<a href="#"
-									>Пандуси, поручні, звукові інформатори</a
-								>
-							</h1>
-						</article>
-						<article>
-							<div class="picture">
-								<picture>
-									<img src="temp/small-3.jpg" alt="" />
-								</picture>
-							</div>
-							<h1>
-								<a href="#"
-									>Ще 810 окупантів було ліквідовано
-									українськими
-								</a>
-							</h1>
-						</article>
-						<article>
-							<div class="picture">
-								<picture>
-									<img src="temp/small-4.jpg" alt="" />
-								</picture>
-							</div>
-							<h1>
-								<a href="#"
-									>В Мукачеві виділили 2,6 млн грн допомоги
-								</a>
-							</h1>
-						</article>
-						<article>
-							<div class="picture">
-								<picture>
-									<img src="temp/small-1.jpg" alt="" />
-								</picture>
-							</div>
-							<h1>
-								<a href="#">На Закарпатті</a>
-							</h1>
-						</article>
-						<article>
-							<div class="picture">
-								<picture>
-									<img src="temp/small-2.jpg" alt="" />
-								</picture>
-							</div>
-							<h1>
-								<a href="#"
-									>Пандуси, поручні, звукові інформатори</a
-								>
-							</h1>
-						</article>
-						<article>
-							<div class="picture">
-								<picture>
-									<img src="temp/small-3.jpg" alt="" />
-								</picture>
-							</div>
-							<h1>
-								<a href="#"
-									>Ще 810 окупантів було ліквідовано
-									українськими
-								</a>
-							</h1>
-						</article>
-						<article>
-							<div class="picture">
-								<picture>
-									<img src="temp/small-4.jpg" alt="" />
-								</picture>
-							</div>
-							<h1>
-								<a href="#"
-									>В Мукачеві виділили 2,6 млн грн допомоги
-								</a>
-							</h1>
-						</article>
-					</div>
-					<!-- class="notices" -->
-
-					<div id="a3">
-						<a href="#">
-							<img src="temp/a3.jpg" alt="" />
-						</a>
-					</div>
-				</aside>
+						<div id="a3">
+							<a href="#">
+								<img src="temp/a3.jpg" alt="" />
+							</a>
+						</div>
+					</aside>
+				</div>				
 			</div>
+
 		</div>
 
 		<footer id="footer">
@@ -647,6 +695,8 @@
 				</ul>
 			</div>
 		</footer>
+
+		<div id="body-cover"></div>
 
 		<script src="js/script.js"></script>
 	</body>

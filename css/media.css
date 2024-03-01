@@ -6,6 +6,7 @@ media tabs && video
 {
     background: var(--media);
     padding: var(--gap40) 0;
+    position: relative;
 }
 
 #media .title 

@@ -135,7 +135,7 @@
 							<a href="#"><span class="youtube"></span></a>
 						</li>
 						<li>
-							<a href="#"><span class="search"></span></a>
+							<a href="/search.html"><span class="search"></span></a>
 						</li>
 					</ul>
 				</div>
@@ -145,30 +145,78 @@
 			</div>
 		</header>
 
-		<div id="video-heading">
-			<div class="wrapper">
-				<a href="#" class="picture">
-					<picture>
-						<img src="temp/article-1.jpg" alt="" />
-					</picture>
-				</a>
-				<div>
-					<h1>
-						Захисник з Мукачева розповів, чому покинув все та пішов
-						захищати Україну
-					</h1>
-					<time>23.10.2023 | 20:02</time>
+		<div id="content">
 
-					<span class="view">951</span>
-					<span class="comment">15</span>
-				</div>
+			<div id="add-news">
+
+				<div class="title">повідомити новину</div>
+				<p>Заповніть наступні поля щоб повідомити новину</p>
+	
+				<form>
+					<div id="add-news-name">
+						<input type="text" name="" placeholder="Ім'я">
+					</div>
+					<div id="add-news-surname">
+						<input type="text" name="" placeholder="Прізвище">
+					</div>
+					<div id="add-news-dad">
+						<input type="text" name="" placeholder="По батькові">
+					</div>
+					<div id="add-news-email">
+						<input type="email" name="" placeholder="email">
+					</div>
+					<div id="add-news-checkbox">
+						<label class="mark">
+							Показувати електронну пошту
+							<input type="checkbox">
+							<span class="checkbox"></span>
+						</label>
+					</div>
+					<div id="add-news-comment">
+						<textarea></textarea>
+					</div>
+					<div id="add-news-code">Код перевірки</div>
+					<div id="add-news-captcha">
+						<img src="temp/captcha.jpg" alt="">
+					</div>
+					<div id="add-news-submit">
+						<button type="submit">
+							Відправити
+						</button>
+					</div>
+				</form>
+	
+				<div id="form-close"></div>
+	
 			</div>
+			<!-- id="add-news"  -->
+			
+			<div id="video-heading">
+
+				<div class="wrapper">
+					<a href="#" class="picture">
+						<picture>
+							<img src="temp/article-1.jpg" alt="" />
+						</picture>
+					</a>
+					<div>
+						<h1>
+							Захисник з Мукачева розповів, чому покинув все та пішов
+							захищати Україну
+						</h1>
+						<time>23.10.2023 | 20:02</time>
+
+						<span class="view">951</span>
+						<span class="comment">15</span>
+					</div>
+				</div>
+			</div>			
 		</div>
 
 		<div class="wrapper">
 			<div class="main-sidebar">
 				<div>
-					<div id="a10">
+					<div id="a3">
 						<a href="#"><img src="temp/a1.jpg" alt="" /></a>
 					</div>
 
@@ -271,7 +319,7 @@
 					</div>
 					<!-- id="main-content" -->
 
-					<div id="a6">
+					<div id="a2">
 						<a href="#"><img src="temp/a1.jpg" alt="" /></a>
 					</div>
 
@@ -734,6 +782,8 @@
 				</ul>
 			</div>
 		</footer>
+
+		<div id="body-cover"></div>
 
 		<script src="js/script.js"></script>
 	</body>

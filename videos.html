@@ -135,7 +135,7 @@
 							<a href="#"><span class="youtube"></span></a>
 						</li>
 						<li>
-							<a href="#"><span class="search"></span></a>
+							<a href="/search.html"><span class="search"></span></a>
 						</li>
 					</ul>
 				</div>
@@ -146,6 +146,51 @@
 		</header>
 
 		<div id="media">
+
+			<div id="add-news">
+
+				<div class="title">повідомити новину</div>
+				<p>Заповніть наступні поля щоб повідомити новину</p>
+	
+				<form>
+					<div id="add-news-name">
+						<input type="text" name="" placeholder="Ім'я">
+					</div>
+					<div id="add-news-surname">
+						<input type="text" name="" placeholder="Прізвище">
+					</div>
+					<div id="add-news-dad">
+						<input type="text" name="" placeholder="По батькові">
+					</div>
+					<div id="add-news-email">
+						<input type="email" name="" placeholder="email">
+					</div>
+					<div id="add-news-checkbox">
+						<label class="mark">
+							Показувати електронну пошту
+							<input type="checkbox">
+							<span class="checkbox"></span>
+						</label>
+					</div>
+					<div id="add-news-comment">
+						<textarea></textarea>
+					</div>
+					<div id="add-news-code">Код перевірки</div>
+					<div id="add-news-captcha">
+						<img src="temp/captcha.jpg" alt="">
+					</div>
+					<div id="add-news-submit">
+						<button type="submit">
+							Відправити
+						</button>
+					</div>
+				</form>
+	
+				<div id="form-close"></div>
+	
+			</div>
+			<!-- id="add-news"  -->
+
 			<div class="wrapper">
 				<div class="others-posts">
 					<div class="title">Відеоролики</div>
@@ -413,6 +458,8 @@
 				</ul>
 			</div>
 		</footer>
+
+		<div id="body-cover"></div>
 
 		<script src="js/script.js"></script>
 	</body>
