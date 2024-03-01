@@ -1,7 +1,3 @@
-/*
-todo: checkbox, radio 
-*/
-
 .vote
 {
     background: var(--media);
@@ -12,7 +8,6 @@ todo: checkbox, radio
 {
     .vote
     {
-        /* background: var(--media); */
         padding: var(--gap20) var(--gap40);
     }
 }
@@ -43,7 +38,6 @@ todo: checkbox, radio
 /* 
 result
 */
-
 .vote-result
 {
     background: var(--media);
@@ -55,9 +49,7 @@ result
 {
     .vote-result
     {
-        /* background: var(--media); */
         padding: var(--gap20) var(--gap30);
-        /* display: block; */
     }    
 }
 
@@ -90,8 +82,6 @@ result
     line-height: 30px;
     color: var(--body);
     display: block;
-    /* margin: 0 0 var(--gap20); */
-
     grid-area: vote-p;
 }
 

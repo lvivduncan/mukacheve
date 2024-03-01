@@ -1,7 +1,6 @@
 .pagination
 {
     display: block;
-    /* margin: var(--gap30) 0; */
     margin: var(--gap30) 0 0;
 }
 
@@ -31,9 +30,6 @@
     font-family: Ubuntu;
     font-size: 16px;
     font-weight: 700;
-    /* line-height: 18px; */
-    /* letter-spacing: 0em; */
-    /* text-align: center; */
 }
 
 .pagination li a:hover,

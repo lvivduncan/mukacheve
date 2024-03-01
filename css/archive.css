@@ -2,18 +2,8 @@
 {
     padding: var(--gap40) 0;
     text-align: center;
-    /* width: 1320px; */
-    /* margin: 0 auto; */
     position: relative;
 }
-
-/* @media(max-width:1340px)
-{
-    #archive
-    {
-        width: 95%;
-    }
-} */
 
 #archive article 
 {

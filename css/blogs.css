@@ -21,7 +21,6 @@
 .blog-2-posts article 
 {
     display: grid;
-    /* grid-template-columns: repeat(2,1fr); */
     grid-template-columns: 160px 1fr;
     border-top: 1px solid var(--border-post);
     padding-top: var(--gap10);
@@ -77,7 +76,6 @@
     font-family: Roboto;
     font-size: 16px;
     font-weight: 400;
-    /* line-height: 20px; */
     color: var(--black);
     text-decoration: none;
 }

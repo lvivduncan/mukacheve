@@ -175,49 +175,7 @@
         text-align: left;
     }
 }
-/* 
-#registration [type="text"],
-#registration [type="password"],
-#registration [type="email"]
-{
-    height: 50px;
-    width: 100%;
-    padding: var(--gap20);
-    border: 1px solid var(--input);
-    outline: none;
 
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -0.015em;
-}
-
-#registration [type="submit"]
-{
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 700;
-    letter-spacing: -0.015em;
-    text-align: center;
-    color: var(--body);
-    text-transform: uppercase;
-    background: var(--media);
-    border: none;
-    width: 200px;
-    height: 50px;
-    line-height: 50px;
-    cursor: pointer;
-}
-
-#registration [type="text"]:focus,
-#registration [type="password"]:focus,
-#registration [type="email"]:focus
-{
-    border-color: var(--media);
-}
- */
-/**/
 #login
 {
     width: 400px;
@@ -249,29 +207,7 @@
 {
     margin: 0 0 var(--gap20);
 }
-/* 
-#login [type="text"],
-#login [type="password"]
-{
-    height: 50px;
-    width: 100%;
-    padding: var(--gap20);
-    border: 1px solid var(--input);
-    outline: none;
 
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -0.015em;
-}
-
-#login [type="text"]:focus,
-#login [type="password"]:focus
-{
-    border-color: var(--media)
-}
- */
 #login-recovery
 {
     font-family: Roboto;

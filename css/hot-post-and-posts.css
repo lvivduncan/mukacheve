@@ -1,5 +1,4 @@
 /* колонка, де перший пост півжирний та має картинку */
-
 .hot-post-and-posts article
 {
     border-top: 1px solid var(--border-post);

@@ -1,5 +1,4 @@
 
-/* 25% 25% 25% 25% */
 .three-column
 {
     display: grid;
@@ -7,7 +6,6 @@
     gap: var(--gap40);
     margin: var(--gap40) 0;
 }
-
 
 .three-column article
 {

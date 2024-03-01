@@ -1,7 +1,6 @@
 /*
 media tabs && video
 */
-
 #media
 {
     background: var(--media);
@@ -17,7 +16,6 @@ media tabs && video
 /*
 синій блок на сторінці video-datails
 */
-
 #video-heading
 {
     background: var(--media);
@@ -66,12 +64,8 @@ media tabs && video
 {
     #video-heading h1 
     {
-        /* font-family: Roboto; */
         font-size: 30px;
-        /* font-weight: 700; */
         line-height: 30px;
-        /* color: var(--body); */
-        /* margin: 0 0 var(--gap10) */
     }    
 }
 

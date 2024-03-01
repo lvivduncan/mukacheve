@@ -21,44 +21,7 @@
     grid-template-columns: 1fr;
   }
 }
-/* 
-#adverty-search [type="search"]
-{
-    width: 100%;
-    padding: var(--gap20);
-    border: 1px solid var(--input);
-    outline: none;
-    font-family: Roboto;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 24px;
-    letter-spacing: -0.015em;
-    height: 50px;
-    transition: border .5s;
-}
 
-#adverty-search [type="search"]:focus 
-{
-    border-color: var(--media);
-}
-
-#adverty-search [type="submit"]
-{
-    background: var(--media);
-    color: var(--body);
-    cursor: pointer;
-    border: none;
-
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: -0.015em;
-    text-align: center;
-    text-transform: uppercase;
-    height: 50px;
-}
- */
 #adverty p 
 {
     margin: var(--gap20) 0;
@@ -95,18 +58,6 @@
 #adverty-filter [type="submit"]
 {
     background: var(--footer);
-    /* color: var(--body);
-    cursor: pointer;
-    border: none;
-
-    font-family: Roboto;
-    font-size: 14px;
-    font-weight: 700;
-    line-height: 24px;
-    letter-spacing: -0.015em;
-    text-align: center;
-    text-transform: uppercase;
-    height: 50px; */
 }
 
 #adverty-filter [type="submit"]:hover 

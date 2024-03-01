@@ -1,5 +1,4 @@
 
-/*23-02-2024*/
 #home
 {
     width: 1320px;
@@ -23,8 +22,6 @@
     {
         width: 95%;
         grid-template-columns: 1fr;
-        /* gap: var(--gap20) var(--gap40); */
-
         grid-template-areas: 
             'home-1'
             'home-2'

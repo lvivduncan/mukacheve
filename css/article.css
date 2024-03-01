@@ -1,7 +1,6 @@
 /*
 grid-layout for article
 */
-
 #article
 {
     display: grid;
@@ -40,7 +39,6 @@ grid-layout for article
     grid-area: article-1;
 }
 
-/* якщо не буде банера -- картинка буде налізати на контент внизу */
 #article main .picture 
 {
     margin-bottom: var(--gap20);

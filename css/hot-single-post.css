@@ -1,7 +1,6 @@
 /*
 hot-single-post block - home page, category page
 */
-
 #hot-single-post 
 {
     position: relative;
@@ -73,11 +72,8 @@ hot-single-post block - home page, category page
     {
         font-family: Roboto;
         font-size: 24px;
-        /* font-weight: 700; */
         line-height: 24px;
-        /* letter-spacing: 0; */
         color: var(--body);
-        /* text-decoration: none; */
     }
 }
 
@@ -106,7 +102,6 @@ hot-single-post block - home page, category page
     font-weight: 400;
     line-height: 36px;
     letter-spacing: 0;
-    /* text-align: left; */
     color: var(--body);
     margin-left: var(--gap20);
 }

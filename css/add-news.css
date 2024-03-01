@@ -30,8 +30,6 @@
     #add-news
     {
         padding: var(--gap20);
-        /* height: 600px; */
-        /* overflow: scroll; */
     }
 }
 
@@ -45,7 +43,6 @@
     color: var(--footer)!important;
 }
 
-/* 480 */
 #add-news form
 {
     display: grid;
@@ -59,7 +56,6 @@
 
 }
 
-/* 770 */
 @media(max-width:776px)
 {
     #add-news form
@@ -132,9 +128,7 @@
 {
     #add-news-submit
     {
-        /* grid-area: add-news-submit; */
         justify-self: left;
-        /* align-self: center; */
     }    
 }
 
