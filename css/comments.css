@@ -6,7 +6,7 @@
 #comments h1,
 #comments h2
 {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 30px;
     font-weight: 400;
     height: 30px;
@@ -23,7 +23,7 @@
     border-radius: 50%;
     color: var(--footer);
     text-align: center;
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 18px;
     font-weight: 400;
 }
@@ -71,7 +71,7 @@
     text-transform: uppercase;
     background: var(--media);
 
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 14px;
     font-weight: 700;
     line-height: 24px;
@@ -127,7 +127,7 @@
 
 .form-bottom [type="submit"]
 {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 14px;
     font-weight: 700;
     letter-spacing: -0.015em;
@@ -183,7 +183,7 @@
     color: var(--body);
     border-radius: 50%;
 
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 16px;
     font-weight: 700;
     text-transform: uppercase;
@@ -192,9 +192,9 @@
 .comment-head-user
 {
     color: var(--footer);
-    font-family: Roboto;
+    /* font-family: Roboto; */
 
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 18px;
     font-weight: 400;
 }
@@ -222,7 +222,7 @@
 .comment-body
 {
     margin: var(--gap20) 0 0 var(--gap60);
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 16px;
     font-weight: 300;
 }

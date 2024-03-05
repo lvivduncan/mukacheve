@@ -34,7 +34,7 @@
     counter-increment: section;
     content: counter(section);
 
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 24px;
     font-weight: 700;
     line-height: 20px;
@@ -53,7 +53,7 @@
 
 .two-column h1 a 
 {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 16px;
     font-weight: 400;
     line-height: 20px;

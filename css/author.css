@@ -44,7 +44,7 @@
 
 #author-description h1
 {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 24px;
     font-weight: 700;
     line-height: 20px;
@@ -54,7 +54,7 @@
 
 #author-description p
 {
-    font-family: Roboto;
+    /* font-family: Roboto; */
     font-size: 16px;
     font-weight: 300;
     line-height: 20px;
