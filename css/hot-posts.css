@@ -3,7 +3,7 @@ hot post right in home page
 */
 #hot-posts
 {
-    margin: 0 0 var(--gap20);
+    /* margin: 0 0 var(--gap20); */
 }
 
 #hot-posts article
@@ -13,7 +13,8 @@ hot post right in home page
         'hot-posts-picture hot-posts-h1'
         'hot-posts-picture hot-posts-time';
     grid-template-columns: 120px 1fr;
-    gap: var(--gap10) var(--gap20);
+    /* gap: var(--gap10) var(--gap20); */
+    gap: 7px var(--gap20);
     align-items: start;
     border-top: 1px solid var(--border-post);
     padding-top: var(--gap15);
@@ -35,14 +36,16 @@ hot post right in home page
     padding-top: 0;
 }
 
-#hot-posts article .picture
+#hot-posts article .picture,
+#hot-posts article .ova-engine-image-preview
 {
     grid-area: hot-posts-picture;
 }
 
 @media(max-width:520px)
 {
-    #hot-posts article .picture
+    #hot-posts article .picture,
+    #hot-posts article .ova-engine-image-preview
     {
         display: none;
     }    
