@@ -1,0 +1,16 @@
+.ova-engine-image-preview
+{
+    display: block;
+    background-image: var(--ova-engine-fallback-bg);
+    background-size: cover;
+    position: relative;
+}
+
+.ova-engine-image-preview img
+{
+    z-index: 2;
+    position: relative;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

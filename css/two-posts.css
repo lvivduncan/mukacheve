@@ -46,7 +46,12 @@ title + 2 posts
     padding-top: var(--gap15);
 }
 
-.two-posts .picture
+/* .two-posts .picture
+{
+    grid-area: four-post-picture;
+
+} */
+.two-posts picture
 {
     grid-area: four-post-picture;
 
@@ -61,6 +66,7 @@ title + 2 posts
     font-weight: 400;
     letter-spacing: 0;
     color: var(--border);
+    line-height: .9;
 }
 
 .two-posts h1 

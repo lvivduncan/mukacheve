@@ -7,8 +7,10 @@
 {
     gap: var(--gap25);
     border-top: 1px solid var(--border-post);
-    padding-top: var(--gap15);
-    margin-bottom: var(--gap15);
+    /* padding-top: var(--gap15); */
+    padding-top: 14px;
+    /* margin-bottom: var(--gap15); */
+    margin-bottom: 14px;
 
     display: flex;
 }
@@ -27,7 +29,7 @@
     /* font-family: Roboto; */
     font-size: 14px;
     font-weight: 400;
-    line-height: 20px;
+    line-height: 25px;
     color: var(--border);
     width: var(--gap40);
 }

@@ -26,7 +26,7 @@ hot-single-post block - home page, category page
     bottom: 0;
     right: 0;
     top: 0;
-    z-index: 1;
+    z-index: 3;
     background: rgba(0,0,0,.5);
 }
 
@@ -44,7 +44,7 @@ hot-single-post block - home page, category page
     left: var(--gap20);
     right: var(--gap20);
     color: var(--body);
-    z-index: 2;
+    z-index: 4;
 }
 
 #hot-single-post h1 

@@ -8,13 +8,18 @@
 
 .four-column article
 {
-    border-top: 1px solid var(--border-post);
-    padding: var(--gap15) 0;
+    /* border-top: 1px solid var(--border-post); */
+    border-top: 1px solid var(--search);
+    padding: var(--gap15) 0 var(--gap10);
 }
 
-.four-column .picture 
+/* .four-column .picture 
 {
     margin-bottom: var(--gap10);
+} */
+.four-column picture 
+{
+    margin-bottom: 13px;
 }
 
 .four-column article time 
@@ -22,7 +27,8 @@
     /* font-family: Roboto; */
     font-size: 14px;
     font-weight: 400;
-    line-height: 20px;
+    /* line-height: 20px; */
+    line-height: 6px;
     letter-spacing: 0;
     color: var(--border);
     display: block;
