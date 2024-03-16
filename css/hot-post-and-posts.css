@@ -2,10 +2,14 @@
 .hot-post-and-posts article
 {
     border-top: 1px solid var(--border-post);
-    padding: var(--gap15) 0;
+    padding: var(--gap15) 0 var(--gap10);
 }
 
-.hot-post-and-posts .picture 
+/* .hot-post-and-posts .picture 
+{
+    margin-bottom: var(--gap10);
+} */
+.hot-post-and-posts picture 
 {
     margin-bottom: var(--gap10);
 }
@@ -15,7 +19,8 @@
     /* font-family: Roboto; */
     font-size: 14px;
     font-weight: 400;
-    line-height: 20px;
+    /* line-height: 20px; */
+    line-height: 6px;
     letter-spacing: 0;
     color: var(--border);
     display: block;
@@ -25,7 +30,7 @@
 .hot-post-and-posts article h1
 {
     display: inline;
-    line-height: 20px;
+    line-height: var(--gap20);
 }
 
 .hot-post-and-posts article h1 a
@@ -43,7 +48,7 @@
 .hot-post-and-posts article:first-of-type
 {
     border: none;
-    padding: 0 0 var(--gap15);
+    padding: 0 0 var(--gap10);
 }
 
 .hot-post-and-posts article:first-of-type h1 a

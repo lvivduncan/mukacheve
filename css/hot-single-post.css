@@ -49,7 +49,7 @@ hot-single-post block - home page, category page
 
 #hot-single-post h1 
 {
-    margin: 0 0 var(--gap20)
+    margin: 0 0 var(--gap5)
 }
 
 @media(max-width:540px)

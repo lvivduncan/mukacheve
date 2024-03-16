@@ -54,7 +54,7 @@
 .four-column article:first-of-type
 {
     border: none;
-    padding: 0 0 var(--gap15);
+    padding: 0 0 var(--gap10);
 }
 
 .four-column article:first-of-type h1 a
