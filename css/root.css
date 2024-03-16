@@ -245,7 +245,8 @@ body.transparent #content
     line-height: 20px;
     letter-spacing: 0;
     color: var(--border);
-    margin-left: 6px;
+    /* margin-left: 6px; */
+    margin-right: var(--gap10);
     white-space: nowrap;
 }
 
@@ -267,7 +268,8 @@ body.transparent #content
     line-height: 20px;
     letter-spacing: 0;
     color: var(--border); 
-    margin-left: var(--gap10);
+    /* margin-left: var(--gap10); */
+    margin-right: var(--gap10);
     white-space: nowrap; 
 }
 
@@ -755,11 +757,16 @@ main h1
     margin: var(--gap20) 0;
 }
 
+
+/*
+todo: перевірити де використовується крім article
+*/
 #main-content
 {
     display: grid;
     grid-template-columns: 200px 1fr;
     gap: var(--gap20);
+    margin-top: var(--gap30);
 }
 
 @media(max-width:996px)
