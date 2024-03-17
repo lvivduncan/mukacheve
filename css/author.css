@@ -7,7 +7,7 @@
     gap: var(--gap20);
     border-top: var(--search) 1px solid;
     padding-top: var(--gap10);
-    align-items: start;
+    /* align-items: start; */
     margin: 0 0 var(--gap40);
 }
 
@@ -40,6 +40,10 @@
 .author-description 
 {
     grid-area: author-description;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 #author-description h1

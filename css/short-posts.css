@@ -69,3 +69,9 @@ short preview (image + title)
         grid-template-columns: 1fr;
     }
 }
+
+/**/
+.short-three-column picture
+{
+    top: 3px;
+}
