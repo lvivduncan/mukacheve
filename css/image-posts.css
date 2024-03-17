@@ -24,7 +24,11 @@ image post aside
     margin: 0 0 var(--gap20);
 }
 
-.image-posts article .picture
+/* .image-posts article .picture
+{
+    margin: 0 0 var(--gap10)
+} */
+.image-posts article picture
 {
     margin: 0 0 var(--gap10)
 }

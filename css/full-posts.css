@@ -34,6 +34,7 @@
     /* line-height: 20px; */
     color: var(--border);
     width: var(--gap40);
+    /* width: 35px; */
 
     position: relative;
     top: 4px;
@@ -47,7 +48,7 @@ if post contains an image
     display: grid;
     grid-template-columns: var(--gap40) 120px 1fr;
 
-    gap: var(--gap30);
+    gap: var(--gap25);
     border-top: 1px solid var(--border-post);
     padding-top: var(--gap15);
     margin-bottom: var(--gap15);
@@ -76,34 +77,56 @@ if post contains an image
     }
 }
 
-.full-posts article.with-image .picture
+/* .full-posts article.with-image .picture
 {
     width: 120px;
     height: 77px;
     padding: 0;
     position: static;
     overflow: visible; grid-area: 1 / 2 / 2 / 3;
+} */
+.full-posts article.with-image picture
+{
+    width: 120px;
+    height: 77px;
+    padding: 0;
+    /* position: static; */
+    overflow: visible; grid-area: 1 / 2 / 2 / 3;
+    position: relative;
+    top: 5px;
 }
 
-@media(max-width:540px)
+/* @media(max-width:540px)
 {
     .full-posts article.with-image .picture
     {
         grid-area: 1 / 1 / 3 / 2;
     }
+} */
+@media(max-width:540px)
+{
+    .full-posts article.with-image picture
+    {
+        grid-area: 1 / 1 / 3 / 2;
+    }
 }
 
-.full-posts article.with-image .picture picture 
+/* .full-posts article.with-image .picture picture 
 {
     position: static;
-}
-
+} */
 .full-posts article.with-image .picture picture img
 {
     width: 120px;
     height: 77px;
     max-width: none;
 }
+/* .full-posts article.with-image .picture picture img
+{
+    width: 120px;
+    height: 77px;
+    max-width: none;
+} */
 
 .full-posts article.with-image div
 {

@@ -14,6 +14,7 @@
         'cat-8 cat-9 cat-10 cat-11';
     gap: var(--gap20) var(--gap40);
     position: relative;
+    align-items: start;
 }
 
 @media(max-width:1340px)
@@ -31,7 +32,9 @@
         grid-template-columns: repeat(3, 1fr);
         grid-template-areas: 
             'cat-0 cat-0 cat-11'
-            'home-1 cat-2 cat-11'
+            'home-1 home-1 cat-11'
+            'cat-2 cat-2 cat-11'
+
             'cat-3 cat-3 cat-11'
             'cat-4 cat-6 cat-11'
             'cat-7 cat-7 cat-11'
