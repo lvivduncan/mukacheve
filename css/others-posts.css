@@ -69,11 +69,15 @@
 
 .others-posts article h1 a
 {
-    color: var(--footer);
+    /* color: var(--footer); */
+
+
+    /* publication */
+    color: var(--strong-link);
     text-decoration: none;
     transition: color .5s;
-    /* font-family: Roboto; */
-    font-size: 16px;
+    /* font-size: 16px; */
+    font-size: 18px;
     font-weight: 700;
 }
 
