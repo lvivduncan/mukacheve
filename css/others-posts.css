@@ -34,7 +34,11 @@
     margin: 0 0 var(--gap20)
 }
 
-.others-posts .picture 
+/* .others-posts .picture 
+{
+    margin-bottom: var(--gap10);
+} */
+.others-posts picture 
 {
     margin-bottom: var(--gap10);
 }
@@ -65,6 +69,7 @@
 {
     display: inline;
     line-height: 20px;
+    margin-right: var(--gap10)
 }
 
 .others-posts article h1 a
@@ -112,7 +117,7 @@ video (media)
     position: absolute;
     top: calc(50% - 25px);
     left: calc(50% - 25px);
-    z-index: 1;
+    z-index: 2;
 
     width: 50px;
     height: 50px;
