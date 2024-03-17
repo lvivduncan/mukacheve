@@ -646,7 +646,7 @@ body.transparent #content
     }    
 }
 
-#social 
+#social-nav 
 {
     grid-area: menu-social;
 
@@ -656,19 +656,19 @@ body.transparent #content
 
 @media(max-width:1340px)
 {
-    #social 
+    #social-nav 
     {
         justify-content: center;
     }    
 }
 
-#social li 
+#social-nav li 
 {
     display: block;
     margin-left: var(--gap20);
 }
 
-#social a 
+#social-nav a 
 {
     text-decoration: none;
 }
