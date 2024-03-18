@@ -2,6 +2,7 @@
 {
     background: var(--media);
     padding: var(--gap40) var(--gap100);
+    margin-top: var(--gap20);
 }
 
 @media(max-width:540px)
@@ -43,6 +44,7 @@ result
     background: var(--media);
     padding: var(--gap40) var(--gap80);
     display: block;
+    margin-top: var(--gap20)
 }
 
 @media(max-width:540px)
