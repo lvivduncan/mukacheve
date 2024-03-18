@@ -9,7 +9,9 @@ short preview (image + title)
     grid-template-columns: repeat(2,1fr);
     gap: var(--gap20);
     border-top: 1px solid var(--short);
-    margin: 0 0 var(--gap20)
+    margin: 0 0 var(--gap20);
+
+    align-items: start;
 }
 
 @media(max-width:540px)
