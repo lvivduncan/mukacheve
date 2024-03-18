@@ -14,7 +14,7 @@
     margin: 0 0 var(--gap20);
 }
 
-#comments h2 span
+/* #comments h2 span
 {
     display: inline-block;
     height: 30px;
@@ -23,10 +23,26 @@
     border-radius: 50%;
     color: var(--footer);
     text-align: center;
-    /* font-family: Roboto; */
     font-size: 18px;
     font-weight: 400;
+} */
+
+#comments h2::after
+{
+    content: attr(data-count);
+
+    display: inline-block;
+    height: 30px;
+    width: 30px;
+    border: 1px solid var(--border);
+    border-radius: 50%;
+    color: var(--footer);
+    text-align: center;
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 17px;
 }
+
 
 ::placeholder
 {
@@ -79,7 +95,7 @@
     text-align: center;
     cursor: pointer;
     border: none;
-    
+
 }
 
 .form-characters
@@ -242,11 +258,51 @@
     flex-wrap: wrap;
 }
 
-.comment-footer p
+/* кнопка швидкої відповіді */
+.comment-footer p,
+.comment-footer button
 {
     cursor: pointer;
     color: var(--media);
     text-decoration: underline;   
 
     text-decoration-skip-ink: none;
+
+    background: none;
+    border: none;
+    font-size: 16px;
+    color: var(--media)
+}
+
+.comment-footer button:hover
+{
+    text-decoration: none;
+}
+
+.comment-footer span
+{
+    color: var(--media);
+    text-decoration: underline;
+    cursor: pointer;
+    padding-right: 5px;
+}
+
+.comment-footer span::after
+{
+    content: '(' attr(data-count) ')';
+
+    display: inline-block;
+    font-size: 16px;
+    color: var(--media);
+    text-decoration: underline;
+}
+
+.comment-footer span:hover 
+{
+    text-decoration: none;
+}
+
+.comment-footer span:hover::after
+{
+    text-decoration: none;
 }
