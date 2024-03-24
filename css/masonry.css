@@ -9,13 +9,29 @@
     margin: 0 0 47px;
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
 }
 
+@media(max-width:540px)
+{
+    .masonry .title 
+    {
+        display: block;
+    }
+}
 
 .masonry-header
 {
     margin-left: 56px;
     display: flex;
+}
+
+@media(max-width:540px)
+{
+    .masonry-header
+    {
+        margin: var(--gap20) 0 0 0;
+    }
 }
 
 .masonry-header li 

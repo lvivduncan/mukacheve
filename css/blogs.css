@@ -2,6 +2,21 @@
 2 posts
 */
 
+@media(max-width:540px)
+{
+    #home-blog
+    {
+        background: var(--footer);
+        margin: var(--gap20) 0;
+        padding: var(--gap20);
+    }
+
+    #home-blog *
+    {
+        color: var(--body)
+    }
+}
+
 .blog-2-posts
 {
     display: grid;
@@ -37,6 +52,12 @@
     .blog-2-posts article
     {
         grid-template-columns: 60px 1fr;
+        padding-bottom: var(--gap20)
+    }
+
+    .blog-2-posts article:last-child
+    {
+        padding-bottom: 0;
     }
 }
 

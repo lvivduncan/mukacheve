@@ -23,11 +23,11 @@
     }
 }
 
-.others-posts > :first-child
+/* .others-posts > :first-child
 {
     grid-column: 1 / -1;
     width: 100%;
-}
+} */
 
 .others-posts article
 {
