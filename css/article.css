@@ -90,7 +90,7 @@ grid-layout for article
 }
 
 
-#article .others-posts
+#article-others-posts
 {
     grid-area: article-5;
 }
