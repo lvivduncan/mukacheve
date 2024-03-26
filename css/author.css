@@ -7,7 +7,6 @@
     gap: var(--gap20);
     border-top: var(--search) 1px solid;
     padding-top: var(--gap10);
-    /* align-items: start; */
     margin: 0 0 var(--gap40);
 }
 
@@ -19,18 +18,23 @@
     }
 }
 
-#author-description .picture
+#author-description picture
 {
     grid-area: author-picture;
 
+
+}
+
+#author-description picture img 
+{
     border-radius: 50%;
     height: 120px;
-    width: 120px;
+    width: 120px;    
 }
 
 @media(max-width:540px)
 {
-    #author-description .picture
+    #author-description picture img
     {
         width: 80px;
         height: 80px;
@@ -48,8 +52,8 @@
 
 #author-description h1
 {
-    /* font-family: Roboto; */
-    font-size: 24px;
+    /* font-size: 24px; */
+    font-size: 16px;
     font-weight: 700;
     line-height: 20px;
     color: var(--media);
@@ -58,7 +62,6 @@
 
 #author-description p
 {
-    /* font-family: Roboto; */
     font-size: 16px;
     font-weight: 300;
     line-height: 20px;

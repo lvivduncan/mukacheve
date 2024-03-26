@@ -1116,6 +1116,14 @@ hr
     margin-top: var(--gap25);
 }
 
+@media(max-width:540px)
+{
+    #notices
+    {
+        display: none;
+    }    
+}
+
 #notices .notice-slides
 {
     border-top: 1px solid var(--search);    
@@ -1144,13 +1152,6 @@ hr
     background: #ededed;
     padding: var(--gap10) var(--gap5);
 }
-
-/* #currency 
-{
-    text-align: center;
-    width: 100%;
-    border-collapse: collapse;
-} */
 
 #currency li
 {

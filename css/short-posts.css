@@ -77,3 +77,23 @@ short preview (image + title)
 {
     top: 3px;
 }
+
+/* перелік авторів */
+.short-three-column [data-count]
+{
+    font-size: 18px;
+    color: var(--media);
+    display: block;
+    margin: 0 0 var(--gap10);
+    text-decoration: none;
+}
+
+.short-three-column [data-count]:hover
+{
+    text-decoration: underline;
+}
+
+.short-three-column [data-count]::after
+{
+    content: ' (' attr(data-count) ')';
+}
