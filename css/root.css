@@ -1137,3 +1137,53 @@ hr
     text-decoration: none;
     line-height: 20px;
 }
+
+#currency
+{
+    /* цей колір тільки тут */
+    background: #ededed;
+    padding: var(--gap10) var(--gap5);
+}
+
+/* #currency 
+{
+    text-align: center;
+    width: 100%;
+    border-collapse: collapse;
+} */
+
+#currency li
+{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-items: center;
+    background: var(--body);
+    border-radius: var(--gap5);
+    margin: var(--gap10) var(--gap5);
+    font-size: 20px;
+}
+
+#currency li:first-child
+{
+    background: none;
+    font-size: 14px;
+}
+
+#currency div
+{
+    padding: var(--gap5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: var(--gap5);
+}
+
+#currency li:first-child div
+{
+    padding: 0
+}
+
+#currency img
+{
+    width: 32px;
+}
