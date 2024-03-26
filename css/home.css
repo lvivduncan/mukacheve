@@ -21,7 +21,8 @@
     #home
     {
         width: 95%;
-        grid-template-columns: 1fr;
+        /* grid-template-columns: 1fr; */
+        grid-template-columns: 100%;
         grid-template-areas: 
             'home-1'
             'home-2'
